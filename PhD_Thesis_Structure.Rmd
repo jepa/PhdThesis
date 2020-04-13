@@ -1,0 +1,84 @@
+---
+title: 'Transboundary Fish Stocks and their Management Under Climate Change: Impacts
+  and Adaptation'
+author: "Juliano E. Palacios Abrantes"
+date: '**Advisor**: Dr. William Cheung | **Committee**: Dr. Daniel Pauly, Dr. Rashid
+  Sumaila & Dr. Villy Christensen'
+output:
+  pdf_document:
+    toc : yes
+  word_document: default
+subtitle: '**Proposed Final Structure**'
+---
+
+# Abstract
+
+In 1982, the United Nations Law of the Seas (UNCLOS) formalized the concept of economic exclusive zones (EEZs) creating what we know today as shared stocks. Shared stocks can move freely between countries EEZs (known as transboundary stocks) or between EEZs and the high seas (also called straddling stocks). Theories and empirical experience have shown that fisheries targeting resources that straddle between political boundaries complicate fisheries management and potentially reduce its effectiveness to achieve stated objectives. In most cases, management of transboundary species will have better outcomes in terms of fish yields when nations cooperate, rather than going solo. However, as climate change reshapes the ocean’s environment worldwide, shared fisheries’ delicate governance is threatened as new migration patterns may arise, historic distribution and abundances might shift, and species basic natural traits may modify. These climate induced shifts in stocks’ distribution will likely affect several rules in place that keep international treaties alive. Thus, the main objective of this thesis was to understand the implications of climate change for management of transboundary fish stocks. The first chapter aimed to estimate the global number of exploited marine species shared by neighboring countries and determine their contribution to global and regional catch and fisheries revenue. The second chapter looks at the effects of climate change on the distribution of the shared species identified in the first chapter. Specifically, I look at the potential changes in the stock-share ratio (e.g. how much of the species' distribution is in each EEZ) and the time of emergence of transboundary species. These two factors have caused international conflict and periods of stock over-exploitation in the past. Finally, in the third chapter I focus on two case studies of Canada and the United States (the International Pacific Halibut Commission -IPHC- and a fisheries arrangement for the Gulf of Maine -GoMA-) to explore the potential impacts that climate change will have on selected transboundary stocks management. 
+
+The methods employed here are developed based on previous research and the combination of multiple datasets and mathematical models. For chapter one, I used multiple data sources to overlay the known distribution of 938 commercially valuable marine species responsible for an average of 96.5% of global EEZ catch reconstructed by the *Sea Around Us* at the species level between 2005 and 2014, and 241 EEZs of 198 coastal territories. Next, to project the distribution of species from 2015 to 2100 I relay on the results from a previously established Dynamic Bioclimatic Envelope Model using the same catch data and life history data from *Fish Base*. I explore climate change implications using three Earth system models; the Geophysical Fluid Dynamics Laboratory Earth System Models 2M, the Institute Pierre Simon Laplace Climate Model 5 (IPSL-CM5), and the Max Planck Institute for Meteorology Earth System Model (MPI). Finally, I explore two climate change scenarios according to the Intergovernmental Panel on Climate Change (IPCC)- Representative Concentration Pathways (RCPs); one where society implement strong mitigation policies representing a low emission scenario (RCP 2.6) and one where policies are ignored a emissions stay high (RCP 8.5). These two scenarios can be seen as the most extreme cases comprising most future scenarios.
+
+By identifying current shared stocks and highlighting their importance in terms of catch and revenue, my thesis adds the overall knowledge of transboundary stocks. Moreover, my thesis not present future challenges that shared stocks management will face in a changing climate but also identify potential solutions to reduce international conflict and sustainable manage shared stocks. 
+\clearpage
+
+# Thesis Structure
+
+# Chapter 1. Marine species do not need visas: the transboundary nature of the world’s exploited marine species
+
+**Note:** Paper submitted to journal and currently under review
+
+## Chapter Summary
+
+Regulatory boundaries and species distributions are often not aligned, especially in the case of marine species crossing multiple Economic Exclusive Zones (EEZs). This represents a challenge for fisheries management as policies tend to focus at the national level, yet collaborations are needed to maximize long-term ecological, social and economic benefits. Here, we combined species distributions and the spatial delimitation of EEZs to identify the number of commercially
+Submitted Manuscript: Confidential exploited marine species that are shared between neighboring nations. We found that 67% of the world’s identified fished species are transboundary (n = 633) and were responsible for 80% of the global-EEZs catches (48 million tons) and 78.5% of fisheries revenue (USD 65 billion) in the last decade. Some countries received over 90% of their catch and economic benefits from a few shared resources. This study highlights the large and under-recognized challenge in achieving international fisheries management goals, particularly as species redistribute under climate.
+
+```{r Call_Fig_FishFirVisa, eval = T, echo=FALSE, fig.pos= "L", fig.cap="Number of transboundary species and their contribution to global fisheries catches A) The number of species and amount of revenue are represented by color coding of EEZs and land polygons, respectively."}
+
+img <- png::readPNG("~/GitHub/FishForVisa/Figures/FigS1.png")
+grid::grid.raster(img)
+
+```
+
+
+<!-- For PDF rendering -->
+<!-- ![Number of transboundary species and their contribution to global fisheries catches A) The number of species and amount of revenue are represented by color coding of EEZs and land polygons, respectively. ](~/GitHub/FishForVisa/Figures/FigS1.png) -->
+
+
+\clearpage
+
+# Chapter 2. Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
+
+**Note:** Chapter being developed
+
+## Chapter Summary
+
+The delineation of Economic Exclusive Zones (EEZs) under the United Nations Convention on the Law of the Seas (UNCLOS) in the early 80s, established political boundaries across the distribution of many fish species, creating shared species between nations. Thus, transboundary fish stocks are defined as those populations that cross the EEZ of two or more neighboring nations. Despite not implicit, UNCLOS incentivizes nations to cooperate in the management of transboundary fisheries. Today, most management plans emplaced are based on historical distribution of catches. Climate change represents a challenge for the joint management of fish stocks. For instance, climate-driven changes in species distributions have led to conflict between nations due to changes in the proportion of captures, quota allocation, and fishery newcomers. Recent events suggests that even changes in species that contribute a relatively small proportion of the overall catch can lead to important international conflict. This is the case of the conflict between the EU, Norway, Iceland, and the Faroe Islands over Atlantic mackerel (*Scomber scombrus*) which represents 8% of the catch of involved nations. Thus, in this chapter I explore the climate-driven changes in stock-share-proportion (e.g. the proportion of the stock that each EEZ has) of the previously identified (Chapter One) transboundary species. Moreover, I determine the *time of emergence* of each fish stock, defined as the year in which the stock-share-proportion will change from its historical average. Preliminary results suggest that many neighboring EEZs will see changes in stock-share ratio between 1 and 10% with some exceeding 25%. The results of this chapter can inform fisheries management as it not only identifies at the EEZ level stocks that will be likely to create international conflict, but also estimates the time of emergence that can be used to prioritize management plans in the face of a changing world. 
+
+
+```{r Call_Fig_TransEmergence, eval = T, echo=FALSE, fig.pos= "L", fig.cap="Number of transboundary species and their contribution to global fisheries catches A) The number of species and amount of revenue are represented by color coding of EEZs and land polygons, respectively."}
+
+img <- png::readPNG("~/GitHub/TransEmergence/Figures/figure_connections.png")
+grid::grid.raster(img)
+
+```
+
+
+<!-- For PDF rendering -->
+![Number of transboundary species and their contribution to global fisheries catches A) The number of species and amount of revenue are represented by color coding of EEZs and land polygons, respectively. ](~/GitHub/TransEmergence/Figures/figure_connections.png)
+
+\clearpage
+
+# Chapter 3. Challenges to transboundary fisheries management in North America under climate change
+
+## Chapter Summary
+
+Climate change is shifting the distribution of fish stocks that straddle between Exclusive Economic Zones (EEZ), challenging transboundary fisheries management. In this paper, we examine the projected sharing of jointly managed transboundary fish stocks between the EEZs of Canada and the United States. We hypothesize that ocean warming will alter the sharing of fish stocks between the two countries, and that such changes will intensify under a high carbon emission scenario impacting the stock-share ratio of different stocks. Firstly, we projected changes in potential catch of 33 transboundary stocks of North America in the 21^st century based on multiple Earth system models’ simulations and species distribution models, under two climate change scenarios. We then look at the specific cases of the International Pacific Halibut Commission that manages pacific halibut (*Hippoglossus stenolepis*) and a resource sharing DV arrangement in the Gulf of Maine for cod (*Gadus morhua*), haddock (*Melanogrammus aeglefinus*) and yellowtail flounder (*Limanda ferruginea*) to discuss the management consequences of shifts in transboundary stocks. Results show that, even under a low emission scenario, most transboundary fish stocks sharing ratios, i.e., the proportion of the total catch of a fish stock taken by a given country, will change by 2050 relative to present in the direction as expected from the effects of ocean warming. The overall reduction in catch potential, in addition to the changes in stock-share will further exacerbate trade-offs between changes in species catch potential. Such trade-offs in the Atlantic and Pacific regions will be amplified if a high emission scenario is followed, relative to a low carbon emission scenario. Our paper highlights the challenges that transboundary fisheries management will face as species shift their current distribution under a changing climate.
+
+```{r Call_Fig_OC_Transboundary, eval = T, echo=FALSE, fig.pos= "L", fig.cap="Percentage change of MCP for species managed by the IPHC for mid-century (2041–2060) referent to 2005–2014 under a (A) high emission scenario and (B) low emission scenario."}
+
+img <- png::readPNG("~/GitHub/OC_Transboundary/Ecology/Figures/Fig3.png")
+grid::grid.raster(img)
+
+```
+
+<!-- For PDF rendering -->
+<!-- ![Percentage change of MCP for species managed by the IPHC for mid-century (2041–2060) referent to 2005–2014 under a (A) high emission scenario and (B) low emission scenario. ](~/GitHub/OC_Transboundary/Ecology/Figures/Fig3.png) -->
