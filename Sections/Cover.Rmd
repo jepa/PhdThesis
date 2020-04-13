@@ -1,0 +1,68 @@
+---
+output:
+  pdf_document: 
+    keep_tex: no
+header-includes:
+   - \usepackage{ragged2e}
+   - \usepackage{setspace}
+---
+
+\thispagestyle{empty}
+\begin{singlespace} 
+\begin{center}
+
+\huge
+
+\textbf{Transboundary Fish Stocks and their Management Under Climate Change: Impacts and Adaptation}
+
+\Large
+
+\vspace{8mm}
+
+by
+
+\vspace{8mm}
+
+Juliano Emmanuel Palacios Abrantes  
+
+\vspace{10mm}
+
+B. Biology, Universidad Autonoma Metropolitana unidad Xochimilco, Mexico City, Mexico, 2012  
+
+M.Sc. University of California at Santa Barbara, California, US, 2016  
+
+\vspace{10mm}
+
+A dissertation submitted in partial fulfilment of the requirements for the degree of
+
+\vspace{5mm}
+
+Doctor of philosophy
+
+\vspace{5mm}
+in
+
+\vspace{5mm}
+
+The Faculty of Graduate and Postdoctoral Studies
+
+\vspace{5mm}
+
+(Zoology)
+
+\vspace{5mm}
+
+The University of British Columbia
+
+\vspace{5mm}
+
+(Vancouver, Canada)
+
+\vspace{20mm}
+
+[2020]
+
+\end{center}
+\end{singlespace}
+\normalsize
+\clearpage

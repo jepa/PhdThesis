@@ -1,0 +1,139 @@
+---
+output:
+  pdf_document:
+    # template: Structure.tex
+    # toc: true
+    number_sections: true 
+header-includes:
+   - \usepackage{ragged2e}
+   - \usepackage{setspace}
+   - \usepackage{tocloft}
+
+bibliography: References/Thesis_Ref.bib
+csl: References/harvard.csl
+---
+
+
+\pagenumbering{roman}
+
+<!-- Main Thesis set up chink and latex -->
+\fontfamily{times}
+\setlength{\parindent}{4em}
+\linespread{1.5}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.duplicate.label = 'allow')
+```
+
+```{r Cover_Page, child = 'Sections/Cover.Rmd', eval = F}
+
+
+```
+ 
+
+<!-- Include a table of contents without numbering and with dots :) -->
+\thispagestyle{empty}
+\begin{singlespace}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+<!-- Include these manually so they don't get numberred -->
+\addcontentsline{toc}{section}{Abstract}
+\addcontentsline{toc}{section}{Lay Abstract}
+\addcontentsline{toc}{section}{Preface}
+\addcontentsline{toc}{section}{Acknowledgements}
+\addcontentsline{toc}{section}{References}
+\addcontentsline{toc}{section}{Supplements}
+\end{singlespace}
+
+<!-- Set numbers in non arabic format  -->
+\pagenumbering{roman}
+
+# Abstract
+\section*{Abstract}
+In 1982, the United Nations Law of the Seas (UNCLOS) formalized the concept of economic exclusive zones (EEZs) creating what we know today as shared stocks. Shared stocks can move freely between countries EEZs (known as transboundary stocks) or between EEZs and the high seas (also called straddling stocks). Theories and empirical experience have shown that fisheries targeting resources that straddle between political boundaries complicate fisheries management and potentially reduce its effectiveness to achieve stated objectives. In most cases, management of transboundary species will have better outcomes in terms of fish yields when nations cooperate, rather than going solo. However, as climate change reshapes the ocean’s environment worldwide, shared fisheries’ delicate governance is threatened as new migration patterns may arise, historic distribution and abundances might shift, and species basic natural traits may modify. These climate induced shifts in stocks’ distribution will likely affect several rules in place that keep international treaties alive. Thus, the main objective of this thesis was to understand the implications of climate change for management of transboundary fish stocks. The first chapter aimed to estimate the global number of exploited marine species shared by neighboring countries and determine their contribution to global and regional catch and fisheries revenue. The second chapter looks at the effects of climate change on the distribution of the shared species identified in the first chapter. Specifically, I look at the potential changes in the stock-share ratio (e.g. how much of the species' distribution is in each EEZ) and the time of emergence of transboundary species. These two factors have caused international conflict and periods of stock over-exploitation in the past. Finally, in the third chapter I focus on two case studies of Canada and the United States (the International Pacific Halibut Commission -IPHC- and a fisheries arrangement for the Gulf of Maine -GoMA-) to explore the potential impacts that climate change will have on selected transboundary stocks management. 
+
+The methods employed here are developed based on previous research and the combination of multiple datasets and mathematical models. For chapter one, I used multiple data sources to overlay the known distribution of 938 commercially valuable marine species responsible for an average of 96.5% of global EEZ catch reconstructed by the *Sea Around Us* at the species level between 2005 and 2014, and 241 EEZs of 198 coastal territories. Next, to project the distribution of species from 2015 to 2100 I relay on the results from a previously established Dynamic Bioclimatic Envelope Model using the same catch data and life history data from *Fish Base*. I explore climate change implications using three Earth system models; the Geophysical Fluid Dynamics Laboratory Earth System Models 2M, the Institute Pierre Simon Laplace Climate Model 5 (IPSL-CM5), and the Max Planck Institute for Meteorology Earth System Model (MPI). Finally, I explore two climate change scenarios according to the Intergovernmental Panel on Climate Change (IPCC)- Representative Concentration Pathways (RCPs); one where society implement strong mitigation policies representing a low emission scenario (RCP 2.6) and one where policies are ignored a emissions stay high (RCP 8.5). These two scenarios can be seen as the most extreme cases comprising most future scenarios.
+
+By identifying current shared stocks and highlighting their importance in terms of catch and revenue, my thesis adds the overall knowledge of transboundary stocks. Moreover, my thesis not present future challenges that shared stocks management will face in a changing climate but also identify potential solutions to reduce international conflict and sustainable manage shared stocks. 
+
+\clearpage
+
+# Lay Abstract
+\section*{Lay Abstract}
+
+# Preface
+\section*{Preface}
+
+
+I am the main author of all chapters and lead author of all papers resulting from this work. I took primary responsibility for the research contained in the chapters, including the design, data collection, analysis and writing. This was done under the guidence of my supervisor Dr. William Cheung, and my committee members Dr. Daniel Pauly, Dr. U. Rashid Sumaila, and Dr. Villy Christensen. Moreover, Each chapter chapter has different co-authors that played a critical role in the development of this study providing their expertise and advice with ideas, methods and data interpretation. All chapters of this dissertation have been submitted for publication or are being prepared for submission. 
+
+A version of chapter one is currently *Under review* at a peer review journal. In this chapter I did the conceptualization, developed the methodology, and performed the formal analysis and wrote the original draft. Gabriel Reygondeau supported the methodology, did the data curation, and contributed to the writing, reviewing and editing of the final draft. Colette Wabnitz supported the methodology, and contributed to the writing, reviewing and editing of the final draft. William Cheung did the supervision, and contributed to the writing, reviewing and editing of the final draft. The working title of this chapter is: 
+
+- Marine species do not need visas: the transboundary nature of the world’s exploited marine species. Juliano Palacios-Abrantes, Gabriel Reygondeau, Colette Wabnitz and William W.L. Cheung
+
+A version of chapter two is beign prepared for submission. I did the conceptualization, and performed the formal analysis and wrote the original draft. William Cheung co-developed the methods and conceptualization, did the supervision, and contributed to the writing, reviewing and editing of the final draft.
+
+- Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change. Juliano Palacios-Abrantes, Thomas Frölicher, U. Rashid Sumaila,  Vicky Lam, David VanderZwaag, and William W.L. Cheung
+
+
+Chapter has been accepted at the peer journal *Ecology & Society*. For this chapter I developed the methodology, performed the formal analysis, and wrote the original draft. Rashid Sumaila and William Cheung supperted the conceptualization of the study and and contributed to the writing, reviewing and editing of the final draft. The paper title, when published will be: 
+
+- Challenges to transboundary fisheries management in North America under climate change. Juliano Palacios-Abrantes, U. Rashid Sumaila, William W. L. Cheung
+
+
+
+\clearpage
+
+# Acknowledgements
+\section*{Acknowledgements}
+
+I wana thank the world  
+
+![The only problem with dogs is that they do not live enough](Images/Niema_A.jpeg)
+
+\clearpage
+
+<!-- Set Numbering properly for rest of the document -->
+\pagenumbering{arabic}
+
+# Chapter 1. Introduction
+
+\clearpage
+
+# Chapter 2. Marine species do not need visas: the transboundary nature of the world’s exploited marine species
+
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Manuscript_Draft.Rmd', eval = F}
+
+```
+
+
+# Chapter 3. Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
+
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
+
+```
+
+
+# Chpater 4. Challenges to transboundary fisheries management in North America under climate change
+
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecology/Manuscript_Draft.Rmd', eval = F}
+
+```
+
+# Chapter 5. Synthesis and Conclussion
+
+Some stuff 
+
+# References
+\section*{References}
+
+<div id="refs"></div>
+
+# Supplements
+\section*{Supplements}
+
