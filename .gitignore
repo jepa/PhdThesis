@@ -4,3 +4,7 @@
 .Ruserdata
 External Documents
 Images
+
+# The render document
+*.pdf
+*.log

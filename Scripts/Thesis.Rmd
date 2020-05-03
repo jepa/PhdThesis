@@ -1,16 +1,15 @@
 ---
 output:
-  pdf_document:
-    # template: Structure.tex
-    # toc: true
-    number_sections: true 
+  pdf_document: 
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
 header-includes:
    - \usepackage{ragged2e}
    - \usepackage{setspace}
    - \usepackage{tocloft}
-
-bibliography: References/Thesis_Ref.bib
-csl: References/harvard.csl
+bibliography: ../References/Thesis_Ref.bib
+csl: ../References/harvard.csl
 ---
 
 
@@ -26,7 +25,7 @@ knitr::opts_chunk$set(echo = TRUE)
 options(knitr.duplicate.label = 'allow')
 ```
 
-```{r Cover_Page, child = 'Sections/Cover.Rmd', eval = T}
+```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
 
 
 ```
@@ -99,7 +98,7 @@ I wana thank the world
 
 \clearpage
 
-![](Images/Niema_A.jpeg)
+![](../Images/Niema_A.jpeg)
 The only problem with dogs is that they do not live enough
 
 \clearpage
