@@ -1,17 +1,27 @@
 ---
 output:
-  pdf_document: 
-    keep_tex: yes
+  bookdown::pdf_book:
+    toc : no
+    keep_tex: no
     number_sections: yes
-    toc: yes
+    fig_width: 6 
+    fig_height: 4 
+  # pdf_document: 
+    # keep_tex: yes
+    # number_sections: yes
+    # toc: yes
+    # template: ../Structure/Structure.tex
+    # fig_width: 6 
+    # fig_height: 4 
 header-includes:
    - \usepackage{ragged2e}
    - \usepackage{setspace}
    - \usepackage{tocloft}
+   - \usepackage{float} #use the 'float' package
+   - \floatplacement{figure}{H} #make every figure with caption = h
 bibliography: ../References/Thesis_Ref.bib
 csl: ../References/harvard.csl
 ---
-
 
 \pagenumbering{roman}
 
@@ -26,8 +36,6 @@ options(knitr.duplicate.label = 'allow')
 ```
 
 ```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
-
-
 ```
  
 
@@ -57,48 +65,36 @@ options(knitr.duplicate.label = 'allow')
 # Abstract
 \section*{Abstract}
 
-In 1982, the United Nations Law of the Seas (UNCLOS) formalized the concept of economic exclusive zones (EEZs) creating what we know today as shared stocks. Shared stocks can move freely between countries EEZs (known as transboundary stocks) or between EEZs and the high seas (also called straddling stocks). Theories and empirical experience have shown that fisheries targeting resources that straddle between political boundaries complicate fisheries management and potentially reduce its effectiveness to achieve stated objectives. In most cases, management of transboundary species will have better outcomes in terms of fish yields when nations cooperate, rather than going solo. However, as climate change reshapes the ocean’s environment worldwide, shared fisheries’ delicate governance is threatened as new migration patterns may arise, historic distribution and abundances might shift, and species basic natural traits may modify. These climate induced shifts in stocks’ distribution will likely affect several rules in place that keep international treaties alive. Thus, the main objective of this thesis was to understand the implications of climate change for management of transboundary fish stocks. The first chapter aimed to estimate the global number of exploited marine species shared by neighboring countries and determine their contribution to global and regional catch and fisheries revenue. The second chapter looks at the effects of climate change on the distribution of the shared species identified in the first chapter. Specifically, this chapter explores the potential changes in the stock-share ratio (e.g. how much of the species' distribution is in each EEZ) and the time of emergence of transboundary species. These two factors have caused international conflict and periods of stock over-exploitation in the past. Finally, in the third chapter I focus on two case studies of Canada and the United States (the International Pacific Halibut Commission -IPHC- and a fisheries arrangement for the Gulf of Maine -GoMA-) to explore the potential impacts that climate change will have on selected transboundary stocks management. 
-
-The methods employed here are developed based on previous research and the combination of multiple datasets and mathematical models. For chapter one, I used multiple data sources to overlay the known distribution of 938 commercially valuable marine species responsible for an average of 96.5% of global EEZ catch reconstructed by the *Sea Around Us* at the species level between 2005 and 2014, and 241 EEZs of 198 coastal territories. Next, to project the distribution of species from 2015 to 2100 I relay on the results from a previously established Dynamic Bioclimatic Envelope Model using the same catch data and life history data from *Fish Base*. I explore climate change implications using three Earth system models; the Geophysical Fluid Dynamics Laboratory Earth System Models 2M, the Institute Pierre Simon Laplace Climate Model 5 (IPSL-CM5), and the Max Planck Institute for Meteorology Earth System Model (MPI). Finally, I explore two climate change scenarios according to the Intergovernmental Panel on Climate Change (IPCC)- Representative Concentration Pathways (RCPs); one where society implement strong mitigation policies representing a low emission scenario (RCP 2.6) and one where policies are ignored a emissions stay high (RCP 8.5). These two scenarios can be seen as the most extreme cases comprising most future scenarios.
-
-By identifying current shared stocks and highlighting their importance in terms of catch and revenue, my thesis adds the overall knowledge of transboundary stocks. Moreover, my thesis not present future challenges that shared stocks management will face in a changing climate but also identify potential solutions to reduce international conflict and sustainable manage shared stocks. 
+```{r Cover_Page, child = '../Sections/Abstract.Rmd', eval = T}
+```
 
 \clearpage
 
 # Lay Abstract
 \section*{Lay Abstract}
 
+```{r Cover_Page, child = '../Sections/Lay_Abstract.Rmd', eval = F}
+```
+
 # Preface
 \section*{Preface}
 
-
-I am the main author of all chapters and lead author of all papers resulting from this work. I took primary responsibility for the research contained in the chapters, including the design, data collection, analysis and writing. This was done under the guidence of my supervisor Dr. William W.L. Cheung, and my committee members Dr. Daniel Pauly, Dr. U. Rashid Sumaila, and Dr. Villy Christensen. Moreover, Each chapter chapter has different co-authors that played a critical role in the development of this study providing their expertise and advice with ideas, methods and data interpretation. Some of the chapters of this dissertation have been published or submitted for publication.
-
-A version of chapter one is currently *Under review* at a peer review journal. In this chapter I did the conceptualization, developed the methodology, and performed the formal analysis and wrote the original draft. Gabriel Reygondeau supported the methodology, did the data curation, and contributed to the writing, reviewing and editing of the final draft. Colette Wabnitz supported the methodology, and contributed to the writing, reviewing and editing of the final draft. William Cheung did the supervision, and contributed to the writing, reviewing and editing of the final draft. The working title of this chapter is: 
-
-- Marine species do not need visas: the transboundary nature of the world’s exploited marine species. Juliano Palacios-Abrantes, Gabriel Reygondeau, Colette Wabnitz and William W.L. Cheung
-
-A version of chapter two is beign prepared for submission. I did the conceptualization, and performed the formal analysis and wrote the original draft. William Cheung co-developed the methods and conceptualization, did the supervision, and contributed to the writing, reviewing and editing of the final draft. The working title of this chapter is: 
-
-- Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change. Juliano Palacios-Abrantes, Thomas Frölicher, U. Rashid Sumaila,  Vicky Lam, David VanderZwaag, and William W.L. Cheung
-
-
-Chapter three has been accepted at the peer journal *Ecology & Society*. For this chapter I developed the methodology, performed the formal analysis, and wrote the original draft. Rashid Sumaila and William Cheung supperted the conceptualization of the study and and contributed to the writing, reviewing and editing of the final draft. The reference for this paper is as follows: 
-
-- Challenges to transboundary fisheries management in North America under climate change. Juliano Palacios-Abrantes, U. Rashid Sumaila, William W. L. Cheung. *Ecology & Society*
-
-
+```{r Cover_Page, child = '../Sections/Preface.Rmd', eval = T}
+```
 
 \clearpage
 
 # Acknowledgements
 \section*{Acknowledgements}
 
-I wana thank the world  
-
+```{r Cover_Page, child = '../Sections/Acknowledgements.Rmd', eval = F}
+```
+  
 \clearpage
+\thispagestyle{empty}
 
 ![](../Images/Niema_A.jpeg)
+
 The only problem with dogs is that they do not live enough
 
 \clearpage
@@ -108,32 +104,8 @@ The only problem with dogs is that they do not live enough
 
 # Chapter 1. Introduction
 
-## Transboundary fisheries management 
-
-From 1973 to 1982, members of the United Nations held a series of meetings to discuss regulations regarding the high seas, a region of international common property, at that time, consisting of waters from 12 miles from shore [@McRaeandMunro1989]. The establishment of the UN Convention on the Law of the Sea (UNCLOS) allowed coastal states to claim jurisdiction over the exploration and exploitation of marine resources over 200 nautical miles off their coasts [@UN:1982]. While intended to improve fisheries management by granting property rights over shared resources, this arbitrary delimitation of management areas was not informed by bio-geography, essentially ignoring species distributions and creating what we know today as shared fish stocks [@Gulland, @Munro2002]. Fish stocks, are comonly refered in fisheries management as a particular population that is more or less isolated from other stocks of the same species and hence self-sustaining [@FAO:1999tk]. The Food and Agricultural Organization (FAO) recognizes three types of shared stocks: (*i*) transboundary stocks, shared by 2 or more neighboring coastal nations; (*ii*) straddling stocks, occurring in two or more adjacent national jurisdictions and the high seas; and (*iii*) highly migratory stocks, found in the EEZs of coastal nations that are not necessarily adjoining, and the high seas. 
-
-The inception of shared stocks called for the establishment of new fisheries management methods. Managers and scientists adopted a game theory approach – or means to analyze strategic interactions among decision-makers – which have demonstrated that collaboration is most likely to result in the best overall outcome for nations sharing a common resource [@Bailey:2010ga,@Eide:2013dh]. Examples of countries collaborating in the management of marine fish stocks can be found around the globe. In Europe, Norway... In 
-
-
-
-Lack of collaboration in shared stocks may threaten stock sustainability [@Clark:1980js; @Nguyen:2018dk], reduce the profitability potential of the fishery [@Merino:2007jz], and lead to conflict between coastal nations [@Spijkers:2017ij], although cooperation and non-cooperation can be more complex [@Jensen:2015cf]. 
-
-
-
-
-As we will see below, under climate change, species distributions will shift [@Cheung2016], resulting in new shared stocks [@Pinsky:2018cb] and highlighting the key role cooperative fisheries management can play in maintaining stocks and profitability [@Nguyen:2018dk] as well as hopefully reducing fisheries conflict [@Spijkers:2019cz].
-
-
-
-## Climate change impacts to fisheries
-
-Oceans have absorbed 93% of heat and ~30% of CO2 emission produced by climate change (Rheim et al. 2013) leading to shifts in the physical and chemical components of the system (Gattuso et al. 2015).  Marine species possesses different strategies for coping with environmental fluctuation, for example, through changes in abundance, distribution, and penology (Poloczanska et al. 2016). While the type and magnitude of the responses will vary depending on the oceanic region, taxonomic group and life history and ecological characteristics of the organisms, such responses present challenges for fisheries (Poloczanska et al. 2016). In particular, shifts in exploited marine species distribution and abundance can impact the economics (Lam et al. 2016) and food security (Bell et al. 2017) of communities that depend on them, and trigger conflicts between nations (Spijkers and Boonstra 2017).
-
-One of the most widely documented responses of marine species to ocean warming is species distribution shifts. Marine species, from phytoplankton to top-predator fishes have been reported to shift their distribution ranges by tens to hundreds of kilometers per decade in the 20st century, that is related to changing temperature (Poloczanska et al. 2016). Specifically, pole-ward range shifts have been reported for many marine species, including for tropical tuna (Monllor-Hurtado, Pennino, and Sanchez-Lizaso 2017), American lobster, yellowtail and summer flounders, and red hake (Pinsky and Fogarty 2012). Shifts in distributions have led to changes in community structure, with increasing dominance of warmer-water species (Cheung et al. 2013), for example, in Arctic fish communities (Frainer et al. 2017). These shifts are consistent with projections from species distribution models and are expected to continue in the 21st century under all emission scenarios considered by the Intergovernmental Panel on Climate Change (IPCC) (Cheung, Lam, and Sarmiento 2010; Jones and Cheung 2017).
-
-## Transboundary fisheries management under climate change
-
-Shifts in species distribution are of specific concern for an estimate of 1500 transboundary fish stocks that move freely within nation's boundaries (Caddy 1997; Miller and Munro 2002). 
+```{r Cover_Page, child = '../Sections/Introduction.Rmd', eval = T}
+```
 
 \clearpage
 
@@ -151,13 +123,13 @@ Shifts in species distribution are of specific concern for an estimate of 1500 t
 ```
 
 
-# Chpater 4. Challenges to transboundary fisheries management in North America under climate change
+# Chapter 4. Challenges to transboundary fisheries management in North America under climate change
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecology/Manuscript_Draft.Rmd', eval = F}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
 
 ```
 
-# Chapter 5. Synthesis and Conclussion
+# Synthesis and Conclussion
 
 Some stuff 
 

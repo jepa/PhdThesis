@@ -1,0 +1,34 @@
+---
+output:
+  bookdown::pdf_book:
+    toc : no
+    keep_tex: no
+    number_sections: yes
+---
+
+## Transboundary fisheries management 
+
+From 1973 to 1982, members of the United Nations held a series of meetings to discuss regulations regarding the high seas, a region of international common property, at that time, consisting of waters from 12 miles from shore [@McRaeandMunro1989]. The establishment of the UN Convention on the Law of the Sea (UNCLOS) allowed coastal states to claim jurisdiction over the exploration and exploitation of marine resources over 200 nautical miles off their coasts [@UN:1982]. While intended to improve fisheries management by granting property rights over shared resources, this arbitrary delimitation of management areas was not informed by bio-geography, essentially ignoring species distributions and creating what we know today as shared fish stocks [@Gulland, @Munro2002]. Fish stocks, are comonly refered in fisheries management as a particular population that is more or less isolated from other stocks of the same species and hence self-sustaining [@FAO:1999tk]. The Food and Agricultural Organization (FAO) recognizes three types of shared stocks: (*i*) transboundary stocks, shared by 2 or more neighboring coastal nations; (*ii*) straddling stocks, occurring in two or more adjacent national jurisdictions and the high seas; and (*iii*) highly migratory stocks, found in the EEZs of coastal nations that are not necessarily adjoining, and the high seas. 
+
+The inception of shared stocks called for the establishment of new fisheries management methods. Managers and scientists adopted a game theory approach – or means to analyze strategic interactions among decision-makers – which have demonstrated that collaboration is most likely to result in the best overall outcome for nations sharing a common resource [@Bailey:2010ga,@Eide:2013dh]. Examples of countries collaborating in the management of marine fish stocks can be found around the globe. In Europe, Norway... In 
+
+
+
+Lack of collaboration in shared stocks may threaten stock sustainability [@Clark:1980js; @Nguyen:2018dk], reduce the profitability potential of the fishery [@Merino:2007jz], and lead to conflict between coastal nations [@Spijkers:2017ij], although cooperation and non-cooperation can be more complex [@Jensen:2015cf]. 
+
+
+
+
+As we will see below, under climate change, species distributions will shift [@Cheung2016], resulting in new shared stocks [@Pinsky:2018cb] and highlighting the key role cooperative fisheries management can play in maintaining stocks and profitability [@Nguyen:2018dk] as well as hopefully reducing fisheries conflict [@Spijkers:2019cz].
+
+
+
+## Climate change impacts to fisheries
+
+Oceans have absorbed 93% of heat and ~30% of CO2 emission produced by climate change (Rheim et al. 2013) leading to shifts in the physical and chemical components of the system (Gattuso et al. 2015).  Marine species possesses different strategies for coping with environmental fluctuation, for example, through changes in abundance, distribution, and penology (Poloczanska et al. 2016). While the type and magnitude of the responses will vary depending on the oceanic region, taxonomic group and life history and ecological characteristics of the organisms, such responses present challenges for fisheries (Poloczanska et al. 2016). In particular, shifts in exploited marine species distribution and abundance can impact the economics (Lam et al. 2016) and food security (Bell et al. 2017) of communities that depend on them, and trigger conflicts between nations (Spijkers and Boonstra 2017).
+
+One of the most widely documented responses of marine species to ocean warming is species distribution shifts. Marine species, from phytoplankton to top-predator fishes have been reported to shift their distribution ranges by tens to hundreds of kilometers per decade in the 20st century, that is related to changing temperature (Poloczanska et al. 2016). Specifically, pole-ward range shifts have been reported for many marine species, including for tropical tuna (Monllor-Hurtado, Pennino, and Sanchez-Lizaso 2017), American lobster, yellowtail and summer flounders, and red hake (Pinsky and Fogarty 2012). Shifts in distributions have led to changes in community structure, with increasing dominance of warmer-water species (Cheung et al. 2013), for example, in Arctic fish communities (Frainer et al. 2017). These shifts are consistent with projections from species distribution models and are expected to continue in the 21st century under all emission scenarios considered by the Intergovernmental Panel on Climate Change (IPCC) (Cheung, Lam, and Sarmiento 2010; Jones and Cheung 2017).
+
+## Transboundary fisheries management under climate change
+
+Shifts in species distribution are of specific concern for an estimate of 1500 transboundary fish stocks that move freely within nation's boundaries (Caddy 1997; Miller and Munro 2002). 

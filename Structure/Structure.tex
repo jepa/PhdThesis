@@ -1,3 +1,29 @@
-li.toctree-l2:first-child {
-    display: none;
-}
+%% Submissions for peer-review must enable line-numbering 
+%% using the lineno option in the \documentclass command.
+%%
+%% Preprints and camera-ready submissions do not need 
+%% line numbers, and should have this option removed.
+%%
+%% Please note that the line numbering option requires
+%% version 1.1 or newer of the wlpeerj.cls file, and
+%% the corresponding author info requires v1.2
+
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{tocloft}
+
+\documentclass{article} % for journal submissions
+
+\fontfamily{times}
+\setlength{\parindent}{4em}
+\linespread{1.5}
+
+\begin{document}
+
+\flushbottom
+\maketitle
+\thispagestyle{empty}
+
+$body$
+
+\end{document}

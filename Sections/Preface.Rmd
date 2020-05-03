@@ -1,0 +1,26 @@
+---
+output:
+  bookdown::pdf_book:
+    toc : no
+    keep_tex: no
+    number_sections: yes
+---
+
+I am the main author of all chapters and lead author of all papers resulting from this work. I took primary responsibility for the research contained in the chapters, including the design, data collection, analysis and writing. This was done under the guidence of my supervisor Dr. William W.L. Cheung, and my committee members Dr. Daniel Pauly, Dr. U. Rashid Sumaila, and Dr. Villy Christensen. Moreover, Each chapter chapter has different co-authors that played a critical role in the development of this study providing their expertise and advice with ideas, methods and data interpretation. Some of the chapters of this dissertation have been published or submitted for publication.
+
+A version of chapter one is currently *Under review* at a peer review journal. In this chapter I did the conceptualization, developed the methodology, and performed the formal analysis and wrote the original draft. Gabriel Reygondeau supported the methodology, did the data curation, and contributed to the writing, reviewing and editing of the final draft. Colette Wabnitz supported the methodology, and contributed to the writing, reviewing and editing of the final draft. William Cheung did the supervision, and contributed to the writing, reviewing and editing of the final draft. The working title of this chapter is: 
+
+- Marine species do not need visas: the transboundary nature of the world’s exploited marine species. Juliano Palacios-Abrantes, Gabriel Reygondeau, Colette Wabnitz and William W.L. Cheung
+
+A version of chapter two is beign prepared for submission. I did the conceptualization, and performed the formal analysis and wrote the original draft. William Cheung co-developed the methods and conceptualization, did the supervision, and contributed to the writing, reviewing and editing of the final draft. The working title of this chapter is: 
+
+- Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change. Juliano Palacios-Abrantes, Thomas Frölicher, U. Rashid Sumaila,  Vicky Lam, David VanderZwaag, and William W.L. Cheung
+
+A version of figures *X* and *Y* of that same chapter have been submitted to the current IPCC report con climate change under the following information:
+
+- Reference line forn the IPCC chapter
+
+Chapter three has been accepted at the peer journal *Ecology & Society*. For this chapter I developed the methodology, performed the formal analysis, and wrote the original draft. Rashid Sumaila and William Cheung supperted the conceptualization of the study and and contributed to the writing, reviewing and editing of the final draft. The reference for this paper is as follows: 
+
+- Challenges to transboundary fisheries management in North America under climate change. Juliano Palacios-Abrantes, U. Rashid Sumaila, William W. L. Cheung. *Ecology & Society*
+
