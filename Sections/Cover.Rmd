@@ -13,7 +13,7 @@ header-includes:
 \begin{singlespace} 
 \begin{center}
 
-\huge
+\Huge
 
 \textbf{Transboundary Fish Stocks and their Management Under Climate Change: Impacts and Adaptation}
 
@@ -25,17 +25,21 @@ by
 
 \vspace{8mm}
 
+\huge
+
 Juliano Emmanuel Palacios Abrantes  
+
+\Large
 
 \vspace{8mm}
 
-B. Biology, Universidad Autonoma Metropolitana unidad Xochimilco, Mexico City, Mexico, 2012  
+B.Sc. Universidad Autonoma Metropolitana unidad Xochimilco, Mexico City, Mexico, 2012  
 
-M.Sc. University of California at Santa Barbara, California, US, 2016  
+M.Sc. University of California at Santa Barbara, Santa Barbara California, US, 2016  
 
 \vspace{10mm}
 
-A dissertation submitted in partial fulfilment of the requirements for the degree of
+A dissertation submitted in partial fulfillment of the requirements for the degree of
 
 \vspace{5mm}
 
@@ -60,7 +64,7 @@ The University of British Columbia
 
 (Vancouver, Canada)
 
-\vspace{20mm}
+\vspace{18mm}
 
 [2020]
 

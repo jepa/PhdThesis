@@ -49,7 +49,7 @@ options(knitr.duplicate.label = 'allow')
 \listoftables
 \clearpage
 
-<!-- Include these manually so they don't get numberred -->
+<!-- Include these manually so they don't get numberred --> 
 
 \addcontentsline{toc}{section}{Abstract}
 \addcontentsline{toc}{section}{Lay Abstract}
