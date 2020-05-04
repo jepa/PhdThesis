@@ -1,0 +1,27 @@
+---
+output:
+  bookdown::pdf_book:
+    toc : no
+    keep_tex: no
+    number_sections: yes
+header-includes:
+   - \usepackage{ragged2e}
+   - \usepackage{setspace}
+   - \usepackage[acronym]{glossaries}
+   - \usepackage{glossaries}
+---
+
+Foo
+
+:   description of foo
+
+Bar
+
+:   descirption of bar
+
+Tes
+
+:   descirption of bar
+
+
+La fa de Foo del Bar que ba
