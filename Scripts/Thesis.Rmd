@@ -6,19 +6,13 @@ output:
     number_sections: yes
     fig_width: 6 
     fig_height: 4 
-  # pdf_document: 
-    # keep_tex: yes
-    # number_sections: yes
-    # toc: yes
-    # template: ../Structure/Structure.tex
-    # fig_width: 6 
-    # fig_height: 4 
 header-includes:
    - \usepackage{ragged2e}
    - \usepackage{setspace}
    - \usepackage{tocloft}
-   - \usepackage{float} #use the 'float' package
-   - \floatplacement{figure}{H} #make every figure with caption = h
+   - \usepackage{float} # Use the 'float' package
+   - \floatplacement{figure}{H} # Make every figure with caption = h
+   - \usepackage{wrapfig} # Wrap text over figure
 bibliography: ../References/Thesis_Ref.bib
 csl: ../References/harvard.csl
 ---
@@ -33,11 +27,22 @@ csl: ../References/harvard.csl
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 options(knitr.duplicate.label = 'allow')
+
+library(MyFunctions)
+
+my_lib(
+  c(
+    # Introduction
+    "png",
+    "grid"
+  )
+)
+
 ```
 
-```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
+```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = F}
 ```
- 
+
 
 <!-- Include a table of contents without numbering and with dots :) -->
 \thispagestyle{empty}
@@ -59,35 +64,35 @@ options(knitr.duplicate.label = 'allow')
 \addcontentsline{toc}{section}{Supplements}
 \end{singlespace}
 
-<!-- Set numbers in non arabic format  -->
+<!-- Set numbers in non arabic format. remove normal markdown chapters before rendering  -->
 \pagenumbering{roman}
 
-# Abstract
+<!-- # Abstract -->
 \section*{Abstract}
 
-```{r Cover_Page, child = '../Sections/Abstract.Rmd', eval = T}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
 ```
 
 \clearpage
 
-# Lay Abstract
+<!-- # Lay Abstract -->
 \section*{Lay Abstract}
 
-```{r Cover_Page, child = '../Sections/Lay_Abstract.Rmd', eval = F}
+```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = F}
 ```
 
-# Preface
+<!-- # Preface -->
 \section*{Preface}
 
-```{r Cover_Page, child = '../Sections/Preface.Rmd', eval = T}
+```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
 ```
 
 \clearpage
 
-# Acknowledgements
+<!-- # Acknowledgements -->
 \section*{Acknowledgements}
 
-```{r Cover_Page, child = '../Sections/Acknowledgements.Rmd', eval = F}
+```{r Acknowledgements, child = '../Sections/Acknowledgements.Rmd', eval = F}
 ```
   
 \clearpage
@@ -104,14 +109,14 @@ The only problem with dogs is that they do not live enough
 
 # Chapter 1. Introduction
 
-```{r Cover_Page, child = '../Sections/Introduction.Rmd', eval = T}
+```{r Intro, child = '../Sections/Introduction.Rmd', eval = F}
 ```
 
 \clearpage
 
 # Chapter 2. Marine species do not need visas: the transboundary nature of the world’s exploited marine species
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
 
 ```
 
@@ -125,7 +130,7 @@ The only problem with dogs is that they do not live enough
 
 # Chapter 4. Challenges to transboundary fisheries management in North America under climate change
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
 
 ```
 
@@ -133,11 +138,11 @@ The only problem with dogs is that they do not live enough
 
 Some stuff 
 
-# References
+<!-- # References -->
 \section*{References}
 
 <div id="refs"></div>
 
-# Supplements
+<!-- # Supplements -->
 \section*{Supplements}
 
