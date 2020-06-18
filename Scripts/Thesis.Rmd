@@ -40,7 +40,7 @@ my_lib(
 
 ```
 
-```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = F}
+```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
 ```
 
 
@@ -70,7 +70,7 @@ my_lib(
 <!-- # Abstract -->
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
 ```
 
 \clearpage
@@ -109,14 +109,14 @@ The only problem with dogs is that they do not live enough
 
 # Chapter 1. Introduction
 
-```{r Intro, child = '../Sections/Introduction.Rmd', eval = F}
+```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
 ```
 
 \clearpage
 
 # Chapter 2. Marine species do not need visas: the transboundary nature of the world’s exploited marine species
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
 
 ```
 
