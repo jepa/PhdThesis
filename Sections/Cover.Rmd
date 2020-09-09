@@ -15,7 +15,8 @@ header-includes:
 
 \Huge
 
-\textbf{Transboundary Fish Stocks and their Management Under Climate Change: Impacts and Adaptation}
+\textbf{Transboundary Fish Stocks and their Management Under Climate Change:  
+Impacts and Adaptation}
 
 \Large
 
@@ -64,9 +65,11 @@ The University of British Columbia
 
 (Vancouver, Canada)
 
-\vspace{10mm}
+\vspace{6mm}
 
-[2020]
+© Juliano Emmanuel Palacios Abrantes  
+
+[exp.2020]
 
 \end{center}
 \end{singlespace}
