@@ -1,6 +1,7 @@
 ---
 output:
-  bookdown::pdf_book:
+  bookdown::pdf_book: #
+    # word_document: # for revising
     toc : no
     keep_tex: no
     number_sections: yes
@@ -13,16 +14,9 @@ header-includes:
    - \usepackage{float} # Use the 'float' package
    - \floatplacement{figure}{H} # Make every figure with caption = h
    - \usepackage{wrapfig} # Wrap text over figure
-bibliography: ../References/Thesis_Ref.bib
+# bibliography: ../References/Thesis_Ref.bib
 csl: ../References/harvard.csl
 ---
-
-\pagenumbering{roman}
-
-<!-- Main Thesis set up chink and latex -->
-\fontfamily{times}
-\setlength{\parindent}{4em}
-\linespread{1.5}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -34,7 +28,11 @@ my_lib(
   c(
     # Introduction
     "png",
-    "grid"
+    "grid",
+    # glossary
+    "tidyverse",
+    "knitr",
+    "kableExtra"
   )
 )
 
@@ -42,6 +40,14 @@ my_lib(
 
 ```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
 ```
+
+\pagenumbering{roman}
+
+<!-- Main Thesis set up chink and latex -->
+\fontfamily{times}
+\setlength{\parindent}{4em}
+\linespread{1}
+\doublespacing
 
 
 <!-- Include a table of contents without numbering and with dots :) -->
@@ -54,14 +60,10 @@ my_lib(
 \listoftables
 \clearpage
 
-<!-- Include these manually so they don't get numberred --> 
-
 \addcontentsline{toc}{section}{Abstract}
 \addcontentsline{toc}{section}{Lay Abstract}
 \addcontentsline{toc}{section}{Preface}
 \addcontentsline{toc}{section}{Acknowledgements}
-\addcontentsline{toc}{section}{References}
-\addcontentsline{toc}{section}{Supplements}
 \end{singlespace}
 
 <!-- Set numbers in non arabic format. remove normal markdown chapters before rendering  -->
@@ -70,10 +72,10 @@ my_lib(
 <!-- # Abstract -->
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
 ```
 
-\clearpage
+<!-- \clearpage -->
 
 <!-- # Lay Abstract -->
 \section*{Lay Abstract}
@@ -87,7 +89,7 @@ my_lib(
 ```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
 ```
 
-\clearpage
+<!-- \clearpage -->
 
 <!-- # Acknowledgements -->
 \section*{Acknowledgements}
@@ -95,54 +97,61 @@ my_lib(
 ```{r Acknowledgements, child = '../Sections/Acknowledgements.Rmd', eval = F}
 ```
   
-\clearpage
+<!-- \clearpage -->
+
 \thispagestyle{empty}
 
-![](../Images/Niema_A.jpeg)
+<!-- ![](../Images/Niema_A.jpeg) -->
 
-The only problem with dogs is that they do not live enough
+<!-- The only problem with dogs is that they do not live enough -->
+
+<!-- \clearpage -->
+
+<!-- # Acronyms -->
+\section*{Acronyms}
+
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
+```
 
 \clearpage
 
 <!-- Set Numbering properly for rest of the document -->
 \pagenumbering{arabic}
 
-# Chapter 1. Introduction
+# Introduction
 
 ```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
 ```
 
 \clearpage
 
-# Chapter 2. Marine species do not need visas: the transboundary nature of the world’s exploited marine species
+# Marine species do not need visas: the transboundary nature of the world’s exploited marine species
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
 
 ```
 
 
-# Chapter 3. Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
+# Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
 
 ```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
 
 ```
 
 
-# Chapter 4. Challenges to transboundary fisheries management in North America under climate change
+# Challenges to transboundary fisheries management in North America under climate change
 
 ```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
 
 ```
 
-# Synthesis and Conclussion
+# Synthesis and Conclusion
 
-Some stuff 
-
-<!-- # References -->
-\section*{References}
+# References
+<!-- \section*{References} -->
 
 <div id="refs"></div>
 
-<!-- # Supplements -->
-\section*{Supplements}
+# Supplements
+<!-- \section*{Supplements} -->
 
