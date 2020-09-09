@@ -1,27 +1,60 @@
 ---
 output:
-  bookdown::pdf_book:
+  pdf_document:
     toc : no
     keep_tex: no
     number_sections: yes
-header-includes:
-   - \usepackage{ragged2e}
-   - \usepackage{setspace}
-   - \usepackage[acronym]{glossaries}
-   - \usepackage{glossaries}
 ---
 
-Foo
+```{r glossary, eval = T, echo = F}
 
-:   description of foo
-
-Bar
-
-:   descirption of bar
-
-Tes
-
-:   descirption of bar
-
-
-La fa de Foo del Bar que ba
+tibble(
+   Abr =  c("IPHC",
+            "UNCLOS",
+            "UN",
+            "FAO",
+            "EEZ",
+            "USD",
+            "IPCC",
+            "RCP",
+            "RCP 2.6",
+            "RCP 8.5",
+            "SST",
+            "PNA",
+            "US",
+            "EU",
+            "RFMO",
+            "ToE",
+            "CI",
+            "MSY"
+            ),
+   Meaning = c(
+      "International Pacific Halibut Commission", 
+      "United Nations Law of the Sea",
+      "United Nations",
+      "Food and Agricultural Organization of the United Nations",
+      "Economic Exclusive Zone",
+      "United States Dollars",
+      "Intergovernmental Panel on Climate Change",
+      "Representative Concentration Pathway",
+      "Representative Concentration Pathway (Low Emission Scenario)",
+      "Representative Concentration Pathway (High Emission Scenario)",
+      "Sea Surface Temperature",
+      "Parties to the Nauru Agreement",
+      "United States of America",
+      "European Union",
+      "Regional Fisheries Management Organization",
+      "Time of Emergence",
+      "Confidence Interval",
+      "Maximum Sustainable Yield"
+      )
+) %>% 
+   arrange(Abr) %>% 
+   kable("latex",
+      booktabs = T,
+         col.names = NULL) %>% 
+   kable_styling(full_width = T) %>% 
+   column_spec(1, width = "2cm") %>%  # Size of first column
+   column_spec(1, bold = T) # Abreviation bold
+   
+```
