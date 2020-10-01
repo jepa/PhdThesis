@@ -6,7 +6,6 @@ output:
     number_sections: yes
 header-includes:
     - \usepackage[utf8]{inputenc}
-    - \usepackage[acronym]{glossaries}
     - \usepackage{wrapfig}
     - \usepackage{lipsum}
 ---
