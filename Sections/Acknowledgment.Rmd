@@ -1,0 +1,11 @@
+---
+output:
+  bookdown::pdf_book:
+    toc : no
+    keep_tex: no
+    number_sections: yes
+---
+
+
+I would like to begin by acknowledging that I have spent the last four years studying in the traditional, ancestral, and unceded territory of the Musqueam People.
+
