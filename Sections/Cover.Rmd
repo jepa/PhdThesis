@@ -15,7 +15,7 @@ header-includes:
 
 \Huge
 
-\textbf{Fish do not need visas: Transboundary Fish Stocks and their Management Under Climate Change}
+\textbf{Fish do not Need Visas: Transboundary Fish Stocks and their Management Under Climate Change}
 
 \Large
 
