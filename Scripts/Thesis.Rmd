@@ -39,6 +39,11 @@ my_lib(
 ```
 
 ```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
+
+### Status ###
+# Drafted 19/07
+# Done 20/07
+
 ```
 
 \pagenumbering{roman}
@@ -72,45 +77,73 @@ my_lib(
 <!-- # Abstract -->
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
+
+### Status ###
+# Drafted 20/07
+
 ```
 
-<!-- \clearpage -->
+\clearpage
 
 <!-- # Lay Abstract -->
 \section*{Lay Abstract}
 
 ```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = F}
+
+### Status ###
+# Pending
 ```
+
+\clearpage
 
 <!-- # Preface -->
 \section*{Preface}
 
 ```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
+
+### Status ###
+# Drafted 19/07
+
 ```
 
-<!-- \clearpage -->
+\clearpage
 
 <!-- # Acknowledgements -->
 \section*{Acknowledgements}
 
 ```{r Acknowledgements, child = '../Sections/Acknowledgements.Rmd', eval = F}
-```
-  
-<!-- \clearpage -->
 
-\thispagestyle{empty}
+### Status ###
+# Pending
+```
+
+
+\clearpage
+
+
+```{r Call_Map, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
+
+img <- readPNG("../Images/Niema_A.png")
+grid.raster(img)
+
+```
 
 <!-- ![](../Images/Niema_A.jpeg) -->
 
-<!-- The only problem with dogs is that they do not live enough -->
+The only problem with dogs is that they do not live enough
 
-<!-- \clearpage -->
+\clearpage
 
 <!-- # Acronyms -->
 \section*{Acronyms}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = F}
+
+### Status ###
+# Drafted 19/08
+
+
 ```
 
 \clearpage
@@ -120,38 +153,63 @@ my_lib(
 
 # Introduction
 
-```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
+```{r Intro, child = '../Sections/Introduction.Rmd', eval = F}
+
+### Status ###
+# Drafted 19/08
+# Revised W. 20/09
+
 ```
 
 \clearpage
 
-# Marine species do not need visas: the transboundary nature of the world’s exploited marine species
+# The transboundary nature of the world’s exploited marine species
 
 ```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
 
-```
+### Status ###
+# Drafted 19/07
+# Done 30/09
 
+
+```
 
 # Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
 
 ```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
 
-```
+### Status ###
+# Drafted 27/09
 
+```
 
 # Challenges to transboundary fisheries management in North America under climate change
 
 ```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
 
+### Status ###
+# Drafted 10/03
+# Done 20/07
+
 ```
 
+\clearpage
+
 # Synthesis and Conclusion
+
+```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = F}
+
+### Status ###
+# Drafted 28/07
+
+
+```
 
 # References
 <!-- \section*{References} -->
 
 <div id="refs"></div>
 
-# Supplements
+<!-- # Supplements -->
 <!-- \section*{Supplements} -->
 
