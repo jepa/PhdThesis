@@ -14,7 +14,7 @@ header-includes:
    - \usepackage{float} # Use the 'float' package
    - \floatplacement{figure}{H} # Make every figure with caption = h
    - \usepackage{wrapfig} # Wrap text over figure
-# bibliography: ../References/Thesis_Ref.bib
+bibliography: ../References/Thesis_Ref.bib
 csl: ../References/harvard.csl
 ---
 
@@ -77,7 +77,7 @@ my_lib(
 <!-- # Abstract -->
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
 
 ### Status ###
 # Drafted 20/07
@@ -112,7 +112,7 @@ my_lib(
 <!-- # Acknowledgements -->
 \section*{Acknowledgements}
 
-```{r Acknowledgements, child = '../Sections/Acknowledgements.Rmd', eval = F}
+```{r Acknowledgements, child = '../Sections/Acknowledgments.Rmd', eval = F}
 
 ### Status ###
 # Pending
@@ -122,7 +122,7 @@ my_lib(
 \clearpage
 
 
-```{r Call_Map, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
+```{r Call_Niema, eval = F, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
 
 img <- readPNG("../Images/Niema_A.png")
 grid.raster(img)
@@ -197,7 +197,7 @@ The only problem with dogs is that they do not live enough
 
 # Synthesis and Conclusion
 
-```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = F}
+```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = T}
 
 ### Status ###
 # Drafted 28/07
@@ -205,7 +205,7 @@ The only problem with dogs is that they do not live enough
 
 ```
 
-# References
+<!-- # References -->
 <!-- \section*{References} -->
 
 <div id="refs"></div>
