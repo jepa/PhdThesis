@@ -77,7 +77,7 @@ my_lib(
 <!-- # Abstract -->
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
 
 ### Status ###
 # Drafted 20/07
@@ -100,7 +100,7 @@ my_lib(
 <!-- # Preface -->
 \section*{Preface}
 
-```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
+```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -131,14 +131,14 @@ grid.raster(img)
 
 <!-- ![](../Images/Niema_A.jpeg) -->
 
-The only problem with dogs is that they do not live enough
+<!-- The only problem with dogs is that they do not live enough -->
 
 \clearpage
 
 <!-- # Acronyms -->
 \section*{Acronyms}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = F}
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/08
@@ -153,7 +153,7 @@ The only problem with dogs is that they do not live enough
 
 # Introduction
 
-```{r Intro, child = '../Sections/Introduction.Rmd', eval = F}
+```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/08
@@ -165,31 +165,37 @@ The only problem with dogs is that they do not live enough
 
 # The transboundary nature of the world’s exploited marine species
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
 # Done 30/09
+# Accepted for pub. 05/10
 
 
 ```
 
+\clearpage
+
 # Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
 
-```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
 
 ### Status ###
 # Drafted 27/09
 
 ```
 
+\clearpage
+
 # Challenges to transboundary fisheries management in North America under climate change
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 10/03
 # Done 20/07
+# Accepted for pub. 25/09
 
 ```
 
@@ -205,11 +211,12 @@ The only problem with dogs is that they do not live enough
 
 ```
 
-<!-- # References -->
+\clearpage
+
+# References
 <!-- \section*{References} -->
 
 <div id="refs"></div>
 
 <!-- # Supplements -->
 <!-- \section*{Supplements} -->
-
