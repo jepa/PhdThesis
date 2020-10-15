@@ -1,7 +1,7 @@
 ---
 output:
-  bookdown::pdf_book: #
-    # word_document: # for revising
+  # bookdown::pdf_book: #
+    word_document: # for revising
     toc : no
     keep_tex: no
     number_sections: yes
@@ -74,7 +74,7 @@ my_lib(
 <!-- Set numbers in non arabic format. remove normal markdown chapters before rendering  -->
 \pagenumbering{roman}
 
-<!-- # Abstract -->
+# Abstract
 \section*{Abstract}
 
 ```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
@@ -97,7 +97,7 @@ my_lib(
 
 \clearpage
 
-<!-- # Preface -->
+# Preface
 \section*{Preface}
 
 ```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
@@ -135,7 +135,7 @@ grid.raster(img)
 
 \clearpage
 
-<!-- # Acronyms -->
+# Acronyms
 \section*{Acronyms}
 
 ```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
