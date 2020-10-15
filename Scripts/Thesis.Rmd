@@ -49,7 +49,7 @@ my_lib(
 \pagenumbering{roman}
 
 <!-- Main Thesis set up chink and latex -->
-\fontfamily{times}
+<!-- \fontfamily{times} -->
 \setlength{\parindent}{4em}
 \linespread{1}
 \doublespacing
