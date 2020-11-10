@@ -1,7 +1,7 @@
 ---
 output:
-  # bookdown::pdf_book: #
-    word_document: # for revising
+  bookdown::pdf_book: 
+    # word_document: # for revising
     toc : no
     keep_tex: no
     number_sections: yes
@@ -100,7 +100,7 @@ my_lib(
 # Preface
 \section*{Preface}
 
-```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
+```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
 
 ### Status ###
 # Drafted 19/07
@@ -179,7 +179,7 @@ grid.raster(img)
 
 # Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
 
-```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
 
 ### Status ###
 # Drafted 27/09
@@ -190,7 +190,7 @@ grid.raster(img)
 
 # Challenges to transboundary fisheries management in North America under climate change
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
 
 ### Status ###
 # Drafted 10/03
@@ -203,7 +203,7 @@ grid.raster(img)
 
 # Synthesis and Conclusion
 
-```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = T}
+```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = F}
 
 ### Status ###
 # Drafted 28/07
