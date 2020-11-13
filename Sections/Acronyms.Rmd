@@ -26,7 +26,8 @@ tibble(
             "RFMO",
             "ToE",
             "CI",
-            "MSY"
+            "MSY",
+            "MPA"
             ),
    Meaning = c(
       "International Pacific Halibut Commission", 
@@ -46,7 +47,8 @@ tibble(
       "Regional Fisheries Management Organization",
       "Time of Emergence",
       "Confidence Interval",
-      "Maximum Sustainable Yield"
+      "Maximum Sustainable Yield",
+      "Marine Protected Area"
       )
 ) %>% 
    arrange(Abr) %>% 

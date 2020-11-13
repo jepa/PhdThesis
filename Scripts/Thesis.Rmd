@@ -1,6 +1,6 @@
 ---
 output:
-  bookdown::pdf_book: 
+  bookdown::pdf_book:
     # word_document: # for revising
     toc : no
     keep_tex: no
@@ -16,6 +16,7 @@ header-includes:
    - \usepackage{wrapfig} # Wrap text over figure
 bibliography: ../References/Thesis_Ref.bib
 csl: ../References/harvard.csl
+
 ---
 
 ```{r setup, include=FALSE}
@@ -38,7 +39,7 @@ my_lib(
 
 ```
 
-```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
+```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = F}
 
 ### Status ###
 # Drafted 19/07
@@ -77,7 +78,7 @@ my_lib(
 # Abstract
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
 
 ### Status ###
 # Drafted 20/07
@@ -138,7 +139,7 @@ grid.raster(img)
 # Acronyms
 \section*{Acronyms}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = F}
 
 ### Status ###
 # Drafted 19/08
@@ -153,7 +154,7 @@ grid.raster(img)
 
 # Introduction
 
-```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
+```{r Intro, child = '../Sections/Introduction.Rmd', eval = F}
 
 ### Status ###
 # Drafted 19/08
@@ -165,7 +166,7 @@ grid.raster(img)
 
 # The transboundary nature of the world’s exploited marine species
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
 
 ### Status ###
 # Drafted 19/07
@@ -203,7 +204,7 @@ grid.raster(img)
 
 # Synthesis and Conclusion
 
-```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = F}
+```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = T}
 
 ### Status ###
 # Drafted 28/07
