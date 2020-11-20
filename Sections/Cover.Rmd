@@ -15,7 +15,7 @@ header-includes:
 
 \Huge
 
-\textbf{Fish do not Need Visas: Transboundary Fish Stocks and their Management Under Climate Change}
+\textbf{FISH DO NOT NEED VISAS: TRANSBOUNDARY FISH STOCKS AND THEIR MANAGEMENT UNDER CLIMATE CHANGE}
 
 \Large
 
@@ -39,18 +39,18 @@ M.Sc. University of California at Santa Barbara, Santa Barbara California, US, 2
 
 \vspace{10mm}
 
-A dissertation submitted in partial fulfillment of the requirements for the degree of
+A DISSERTATION SUBMITTED IN PARTIAL FULFILLMENT OF THE REQUIREMENTS FOR THE DEGREE OF
 
 \vspace{5mm}
 
-Doctor of philosophy
+DOCTOR OF PHILOSOPHY
 
 \vspace{5mm}
 in
 
 \vspace{5mm}
 
-The Faculty of Graduate and Postdoctoral Studies
+THE FACULTY OF GRADUATE AND POSTDOCTORAL STUDIES
 
 \vspace{5mm}
 
@@ -58,17 +58,17 @@ The Faculty of Graduate and Postdoctoral Studies
 
 \vspace{5mm}
 
-The University of British Columbia
+THE UNIVERSITY OF BRITISH COLUMBIA
 
 \vspace{5mm}
 
-(Vancouver, Canada)
+(Vancouver)
 
 \vspace{6mm}
 
-© Juliano Emmanuel Palacios Abrantes  
-
 [exp.2020]
+
+© Juliano Emmanuel Palacios Abrantes  
 
 \end{center}
 \end{singlespace}
