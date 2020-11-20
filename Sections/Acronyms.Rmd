@@ -27,7 +27,12 @@ tibble(
             "ToE",
             "CI",
             "MSY",
-            "MPA"
+            "MPA",
+            "GFDL",
+            "IPSL",
+            "MPI",
+            "MCP",
+            "GoMA"
             ),
    Meaning = c(
       "International Pacific Halibut Commission", 
@@ -48,7 +53,12 @@ tibble(
       "Time of Emergence",
       "Confidence Interval",
       "Maximum Sustainable Yield",
-      "Marine Protected Area"
+      "Marine Protected Area",
+      "Geophysical Fluid Dynamics Laboratory Earth System Models 2M",
+      "Institute Pierre Simon Laplace Climate Model 5",
+      "Max Planck Institute for Meteorology Earth System Model",
+      "Maximum Catch Potential",
+      "Gulf of Maine Arrangement"
       )
 ) %>% 
    arrange(Abr) %>% 
@@ -58,5 +68,5 @@ tibble(
    kable_styling(full_width = T) %>% 
    column_spec(1, width = "2cm") %>%  # Size of first column
    column_spec(1, bold = T) # Abreviation bold
-   
+
 ```
