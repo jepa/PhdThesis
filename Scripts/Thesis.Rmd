@@ -1,12 +1,12 @@
 ---
 output:
-  bookdown::pdf_book:
-    # word_document: # for revising
-    toc : no
-    keep_tex: no
-    number_sections: yes
-    fig_width: 6 
-    fig_height: 4 
+  bookdown::word_document2:
+  # bookdown::pdf_book:
+    # toc : no
+    # keep_tex: no
+    # number_sections: yes
+    # fig_width: 6 
+    # fig_height: 4 
 header-includes:
    - \usepackage{ragged2e}
    - \usepackage{setspace}
@@ -18,6 +18,11 @@ bibliography: ../References/Thesis_Ref.bib
 csl: ../References/harvard.csl
 
 ---
+
+<!-- INSTRUCTION FOR KNITTING TO WORD -->
+<!-- Ccomment out all of the pdf_book options -->
+<!-- Use regular markdown headers -->
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -37,9 +42,15 @@ my_lib(
   )
 )
 
+## Trouboeshooting
+
+# Check García molinos reference in introduction
+
+
+
 ```
 
-```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = F}
+```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -75,10 +86,11 @@ my_lib(
 <!-- Set numbers in non arabic format. remove normal markdown chapters before rendering  -->
 \pagenumbering{roman}
 
-# Abstract
+
+<!-- # Abstract -->
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
 
 ### Status ###
 # Drafted 20/07
@@ -90,18 +102,18 @@ my_lib(
 <!-- # Lay Abstract -->
 \section*{Lay Abstract}
 
-```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = F}
+```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = T}
 
 ### Status ###
-# Pending
+# Drafted 16/11
 ```
 
 \clearpage
 
-# Preface
+<!-- # Preface -->
 \section*{Preface}
 
-```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
+```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -113,7 +125,7 @@ my_lib(
 <!-- # Acknowledgements -->
 \section*{Acknowledgements}
 
-```{r Acknowledgements, child = '../Sections/Acknowledgments.Rmd', eval = F}
+```{r Acknowledgements, child = '../Sections/Acknowledgments.Rmd', eval = T}
 
 ### Status ###
 # Pending
@@ -123,7 +135,7 @@ my_lib(
 \clearpage
 
 
-```{r Call_Niema, eval = F, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
+```{r Call_Niema, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
 
 img <- readPNG("../Images/Niema_A.png")
 grid.raster(img)
@@ -136,10 +148,10 @@ grid.raster(img)
 
 \clearpage
 
-# Acronyms
+<!-- # Acronyms -->
 \section*{Acronyms}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = F}
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/08
@@ -154,11 +166,13 @@ grid.raster(img)
 
 # Introduction
 
-```{r Intro, child = '../Sections/Introduction.Rmd', eval = F}
+```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/08
 # Revised W. 20/09
+# Revised W. 09/11
+# Done 11/11
 
 ```
 
@@ -166,7 +180,7 @@ grid.raster(img)
 
 # The transboundary nature of the world’s exploited marine species
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -178,9 +192,9 @@ grid.raster(img)
 
 \clearpage
 
-# Matching the time of emergence of transboundary fish stocks to lead time for policy response under climate change
+# Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change
 
-```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
 
 ### Status ###
 # Drafted 27/09
@@ -191,7 +205,7 @@ grid.raster(img)
 
 # Challenges to transboundary fisheries management in North America under climate change
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 10/03
@@ -208,6 +222,9 @@ grid.raster(img)
 
 ### Status ###
 # Drafted 28/07
+# Revised W. 09/11
+# Revised W. 11/11
+# Done 12/11
 
 
 ```
@@ -219,5 +236,43 @@ grid.raster(img)
 
 <div id="refs"></div>
 
-<!-- # Supplements -->
+# Appendices
+
+\renewcommand{\thefigure}{A\arabic{figure}}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+\setcounter{table}{0}
+
+## Appendix A - Supplementary information for "The transboundary nature of the world’s exploited marine species"
+
+```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Supplements.Rmd', eval = T}
+
+### Status ###
+# Drafted 19/07
+# Done 30/09
+# Accepted for pub. 05/10
+
+
+```
+
+## Appendix B - Supplementary infroamtion for "Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change"
+
+```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = T}
+
+### Status ###
+# Drafted 27/09
+
+```
+
+## Apendix C - Supplementary infroamtion for "Challenges to transboundary fisheries management in North America under climate change"
+
+```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = T}
+
+### Status ###
+# Drafted 10/03
+# Done 20/07
+# Accepted for pub. 25/09
+
+```
+
 <!-- \section*{Supplements} -->
