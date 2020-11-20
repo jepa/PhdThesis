@@ -20,8 +20,9 @@ csl: ../References/harvard.csl
 ---
 
 <!-- INSTRUCTION FOR KNITTING TO WORD -->
-<!-- Ccomment out all of the pdf_book options -->
+<!-- Ccmment out all of the pdf_book options -->
 <!-- Use regular markdown headers -->
+<!-- Change the way you call figure 2 of the introduction -->
 
 
 ```{r setup, include=FALSE}
@@ -60,9 +61,9 @@ my_lib(
 
 \pagenumbering{roman}
 
-<!-- Main Thesis set up chink and latex -->
+<!-- Main Thesis format -->
 <!-- \fontfamily{times} -->
-\setlength{\parindent}{4em}
+\setlength{\parindent}{4em} 
 \linespread{1}
 \doublespacing
 
@@ -83,11 +84,11 @@ my_lib(
 \addcontentsline{toc}{section}{Acknowledgements}
 \end{singlespace}
 
-<!-- Set numbers in non arabic format. remove normal markdown chapters before rendering  -->
+<!-- Set numbers in non arabic format. Remove normal markdown chapters before rendering to PDF  -->
 \pagenumbering{roman}
 
 
-<!-- # Abstract -->
+# Abstract
 \section*{Abstract}
 
 ```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
@@ -99,7 +100,7 @@ my_lib(
 
 \clearpage
 
-<!-- # Lay Abstract -->
+# Lay Abstract
 \section*{Lay Abstract}
 
 ```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = T}
@@ -110,7 +111,7 @@ my_lib(
 
 \clearpage
 
-<!-- # Preface -->
+# Preface
 \section*{Preface}
 
 ```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
@@ -122,7 +123,7 @@ my_lib(
 
 \clearpage
 
-<!-- # Acknowledgements -->
+# Acknowledgements
 \section*{Acknowledgements}
 
 ```{r Acknowledgements, child = '../Sections/Acknowledgments.Rmd', eval = T}
@@ -144,11 +145,15 @@ grid.raster(img)
 
 <!-- ![](../Images/Niema_A.jpeg) -->
 
-<!-- The only problem with dogs is that they do not live enough -->
+<!-- \begin{center} -->
+
+The only problem with dogs is that they do not live enough
+
+<!-- \end{center}  -->
 
 \clearpage
 
-<!-- # Acronyms -->
+# Acronyms
 \section*{Acronyms}
 
 ```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
@@ -238,6 +243,8 @@ grid.raster(img)
 
 # Appendices
 
+<!-- Reseting figure/table numbering and adding an "A" at the front of each figure/table  -->
+
 \renewcommand{\thefigure}{A\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{A\arabic{table}}
@@ -255,7 +262,7 @@ grid.raster(img)
 
 ```
 
-## Appendix B - Supplementary infroamtion for "Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change"
+## Appendix B - Supplementary information for "Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change"
 
 ```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = T}
 
@@ -264,7 +271,7 @@ grid.raster(img)
 
 ```
 
-## Apendix C - Supplementary infroamtion for "Challenges to transboundary fisheries management in North America under climate change"
+## Apendix C - Supplementary information for "Challenges to transboundary fisheries management in North America under climate change"
 
 ```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = T}
 
@@ -274,5 +281,3 @@ grid.raster(img)
 # Accepted for pub. 25/09
 
 ```
-
-<!-- \section*{Supplements} -->
