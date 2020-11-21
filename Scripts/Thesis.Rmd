@@ -103,6 +103,8 @@ my_lib(
 # Lay Abstract
 \section*{Lay Abstract}
 
+<!-- Max 150 words -->
+
 ```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = T}
 
 ### Status ###
