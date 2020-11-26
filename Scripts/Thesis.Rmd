@@ -1,12 +1,12 @@
 ---
 output:
-  # bookdown::pdf_book:
-  # toc : no
-  # keep_tex: no
-  # number_sections: yes
-  # fig_width: 6
-  # fig_height: 4
-  bookdown::word_document2:
+  bookdown::pdf_book:
+  toc : no
+  keep_tex: no
+  number_sections: yes
+  fig_width: 6
+  fig_height: 4
+  # bookdown::word_document2
 header-includes:
    - \usepackage{ragged2e}
    - \usepackage{setspace}
@@ -16,13 +16,14 @@ header-includes:
    - \usepackage{wrapfig} # Wrap text over figure
 bibliography: ../References/Thesis_Ref.bib
 csl: ../References/harvard.csl
+
 ---
 
 <!-- INSTRUCTION FOR KNITTING TO WORD -->
 <!-- Ccmment out all of the pdf_book options -->
 <!-- Use regular markdown headers -->
 <!-- Change the way you call figure 2 of the introduction -->
-
+<!-- Comment # "kableExtra" out from ALL the set up chunks -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -37,8 +38,8 @@ my_lib(
     "grid",
     # glossary
     "tidyverse",
-    "knitr",
-    "kableExtra"
+    # "kableExtra"
+    "knitr"
   )
 )
 
@@ -50,7 +51,7 @@ my_lib(
 
 ```
 
-```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = F}
+```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -90,7 +91,7 @@ my_lib(
 # Abstract
 \section*{Abstract}
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
 
 ### Status ###
 # Drafted 20/07
@@ -104,7 +105,7 @@ my_lib(
 
 <!-- Max 150 words -->
 
-```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = F}
+```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = T}
 
 ### Status ###
 # Drafted 16/11
@@ -115,7 +116,7 @@ my_lib(
 # Preface
 \section*{Preface}
 
-```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
+```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -137,7 +138,7 @@ my_lib(
 \clearpage
 
 
-```{r Call_Niema, eval = F, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
+```{r Call_Niema, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
 
 img <- readPNG("../Images/Niema_A.png")
 grid.raster(img)
@@ -157,7 +158,7 @@ The only problem with dogs is that they do not live enough
 # Acronyms
 \section*{Acronyms}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = F}
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/08
@@ -172,7 +173,7 @@ The only problem with dogs is that they do not live enough
 
 # Introduction
 
-```{r Intro, child = '../Sections/Introduction.Rmd', eval = F}
+```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/08
@@ -186,7 +187,7 @@ The only problem with dogs is that they do not live enough
 
 # The transboundary nature of the world’s exploited marine species
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -200,7 +201,7 @@ The only problem with dogs is that they do not live enough
 
 # Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change
 
-```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
 
 ### Status ###
 # Drafted 27/09
@@ -211,7 +212,7 @@ The only problem with dogs is that they do not live enough
 
 # Challenges to transboundary fisheries management in North America under climate change
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 10/03
@@ -224,7 +225,7 @@ The only problem with dogs is that they do not live enough
 
 # Synthesis and Conclusion
 
-```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = F}
+```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = T}
 
 ### Status ###
 # Drafted 28/07
@@ -253,7 +254,7 @@ The only problem with dogs is that they do not live enough
 
 ## Appendix A - Supplementary information for "The transboundary nature of the world’s exploited marine species"
 
-```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Supplements.Rmd', eval = F}
+```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -265,16 +266,16 @@ The only problem with dogs is that they do not live enough
 
 ## Appendix B - Supplementary information for "Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change"
 
-```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = F}
+```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = T}
 
 ### Status ###
 # Drafted 27/09
 
 ```
 
-## Apendix C - Supplementary information for "Challenges to transboundary fisheries management in North America under climate change"
+## Appendix C - Supplementary information for "Challenges to transboundary fisheries management in North America under climate change"
 
-```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = F}
+```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = T}
 
 ### Status ###
 # Drafted 10/03

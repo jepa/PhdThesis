@@ -8,6 +8,8 @@ output:
 
 ```{r glossary, eval = T, echo = F}
 
+
+
 tibble(
    Abr =  c("IPHC",
             "UNCLOS",
@@ -61,12 +63,18 @@ tibble(
       "Gulf of Maine Arrangement"
       )
 ) %>% 
-   arrange(Abr) %>% 
-   kable("latex",
-      booktabs = T,
-         col.names = NULL) %>% 
-   kable_styling(full_width = T) %>% 
-   column_spec(1, width = "2cm") %>%  # Size of first column
-   column_spec(1, bold = T) # Abreviation bold
+   kable()
+   # 
+   # gloss %>% 
+   #    arrange(Abr) %>%
+   #    kable("latex",
+   #          booktabs = T,
+   #          col.names = NULL) %>%
+   #    kable_styling(full_width = T) %>%
+   #    column_spec(1, width = "2cm") %>%  # Size of first column
+   #    column_spec(1, bold = T) # Abreviation bold
+   
+
+
 
 ```
