@@ -67,27 +67,6 @@ my_lib(
 \linespread{1}
 \doublespacing
 
-
-<!-- Include a table of contents without numbering and with dots :) -->
-\thispagestyle{empty}
-\begin{singlespace}
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\setcounter{tocdepth}{3}
-\tableofcontents
-\listoffigures
-\listoftables
-\clearpage
-
-\addcontentsline{toc}{section}{Abstract}
-\addcontentsline{toc}{section}{Lay Abstract}
-\addcontentsline{toc}{section}{Preface}
-\addcontentsline{toc}{section}{Acknowledgements}
-\end{singlespace}
-
-<!-- Set numbers in non arabic format. Remove normal markdown chapters before rendering to PDF  -->
-\pagenumbering{roman}
-
-
 # Abstract
 \section*{Abstract}
 
@@ -125,6 +104,41 @@ my_lib(
 
 \clearpage
 
+
+<!-- Include a table of contents without numbering and with dots :) -->
+\thispagestyle{empty}
+\begin{singlespace}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+\addcontentsline{toc}{section}{Abstract}
+\addcontentsline{toc}{section}{Lay Abstract}
+\addcontentsline{toc}{section}{Preface}
+\addcontentsline{toc}{section}{Acknowledgements}
+\end{singlespace}
+
+<!-- Set numbers in non arabic format. Remove normal markdown chapters before rendering to PDF  -->
+\pagenumbering{roman}
+
+
+# Acronyms
+\section*{Acronyms}
+
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
+
+### Status ###
+# Drafted 19/08
+
+
+```
+
+\clearpage
+
+
 # Acknowledgements
 \section*{Acknowledgements}
 
@@ -155,18 +169,7 @@ The only problem with dogs is that they do not live enough
 
 \clearpage
 
-# Acronyms
-\section*{Acronyms}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
-
-### Status ###
-# Drafted 19/08
-
-
-```
-
-\clearpage
 
 <!-- Set Numbering properly for rest of the document -->
 \pagenumbering{arabic}
