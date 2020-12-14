@@ -34,8 +34,10 @@ tibble(
             "IPSL",
             "MPI",
             "MCP",
-            "GoMA"
-            ),
+            "GoMA",
+            "IOF",
+            "UBC"
+   ),
    Meaning = c(
       "International Pacific Halibut Commission", 
       "United Nations Law of the Sea",
@@ -60,19 +62,22 @@ tibble(
       "Institute Pierre Simon Laplace Climate Model 5",
       "Max Planck Institute for Meteorology Earth System Model",
       "Maximum Catch Potential",
-      "Gulf of Maine Arrangement"
-      )
+      "Gulf of Maine Arrangement",
+      "Institute for the Oceans and Fisheries",
+      "University of British Columbia"
+   )
 ) %>% 
+   arrange(Abr) %>%
    kable()
    # 
-   # gloss %>% 
-   #    arrange(Abr) %>%
-   #    kable("latex",
-   #          booktabs = T,
-   #          col.names = NULL) %>%
-   #    kable_styling(full_width = T) %>%
-   #    column_spec(1, width = "2cm") %>%  # Size of first column
-   #    column_spec(1, bold = T) # Abreviation bold
+   # gloss %>%
+      # arrange(Abr) %>%
+      # kable("latex",
+            # booktabs = T,
+            # col.names = NULL) %>%
+      # kable_styling(full_width = T) %>%
+      # column_spec(1, width = "2cm") %>%  # Size of first column
+      # column_spec(1, bold = T) # Abreviation bold
    
 
 
