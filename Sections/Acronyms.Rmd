@@ -6,9 +6,21 @@ output:
     number_sections: yes
 ---
 
+
+```{r setup, eval = T, echo=F, warning=F, message=F, results='hide'}
+library(MyFunctions)
+#### Library ####
+packages <- c(
+  # "dplyr", # Data manipulation
+  "knitr",
+  "kableExtra"
+)
+my_lib(packages)
+```
+
+
+
 ```{r glossary, eval = T, echo = F}
-
-
 
 tibble(
    Abr =  c("IPHC",
@@ -67,19 +79,12 @@ tibble(
       "University of British Columbia"
    )
 ) %>% 
-   arrange(Abr) %>%
-   kable()
-   # 
-   # gloss %>%
-      # arrange(Abr) %>%
-      # kable("latex",
-            # booktabs = T,
-            # col.names = NULL) %>%
-      # kable_styling(full_width = T) %>%
-      # column_spec(1, width = "2cm") %>%  # Size of first column
-      # column_spec(1, bold = T) # Abreviation bold
-   
-
-
+   dplyr::arrange(Abr) %>%
+   kable("latex",
+   booktabs = T,
+   col.names = NULL) %>%
+   kable_styling(full_width = T) %>%
+   column_spec(1, width = "2cm") %>%  # Size of first column
+   column_spec(1, bold = T) # Abreviation bold
 
 ```

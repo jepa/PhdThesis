@@ -1,0 +1,48 @@
+---
+output:
+  bookdown::pdf_book:
+    toc : no
+    keep_tex: no
+    number_sections: yes
+---
+
+\doublespacing
+
+The following individuals certify that they have read, and recommend to the Faculty of Graduate
+and Postdoctoral Studies for acceptance, the dissertation entitled:
+
+\vspace{5mm}
+
+\noindent\underline{\makebox[6in][l]{Transboundary fish stocks and their management under climate change}}  
+\vspace{2mm}
+
+submitted by \underline{Juliano Emmanuel Palacios Abrantes} in partial fulfillment of the requirements for
+
+the degree of \noindent\underline{\makebox[5in][l]{Doctor of Philosophy}}  
+
+in \noindent\underline{\makebox[5.8in][l]{Zoology}}
+
+\vspace{5mm}
+
+**Examining Committee:**
+
+\noindent\underline{\makebox[6in][l]{William W.L. Cheung, Zoology, UBC}}  
+Supervisor
+
+\noindent\underline{\makebox[6in][l]{Villy Christensen, Zoology, UBC}}  
+Supervisory Committee Member 
+
+\noindent\underline{\makebox[6in][l]{Daniel Pauly, Zoology, UBC}}  
+Supervisory Committee Member 
+
+\noindent\underline{\makebox[6in][l]{U. Rashid Sumaila, IRES, UBC}}  
+Supervisory Committee Member 
+
+\noindent\underline{\makebox[6in][l]{}}  
+University Examiner
+
+\noindent\underline{\makebox[6in][l]{}}  
+External Examiner
+
+
+
