@@ -1,12 +1,15 @@
 ---
 output:
-  bookdown::pdf_book:
-    toc : no
+  bookdown::pdf_document2:
+    toc : false
     keep_tex: no
-    number_sections: yes
+    number_sections: no
 ---
 
 \doublespacing
+
+<!-- REMOVES PAGE NUMBER -->
+\pagenumbering{gobble}
 
 The following individuals certify that they have read, and recommend to the Faculty of Graduate
 and Postdoctoral Studies for acceptance, the dissertation entitled:

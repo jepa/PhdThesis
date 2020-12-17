@@ -55,7 +55,7 @@ tibble(
       "United Nations Law of the Sea",
       "United Nations",
       "Food and Agricultural Organization of the United Nations",
-      "Economic Exclusive Zone",
+      "Exclusive Economic Zone",
       "United States Dollars",
       "Intergovernmental Panel on Climate Change",
       "Representative Concentration Pathway",
