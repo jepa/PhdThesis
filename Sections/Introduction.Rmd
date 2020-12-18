@@ -23,7 +23,7 @@ Generally speaking, shared fish stocks are those populations that move between d
 
 The management of shared stocks is often viewed through the lens of game theory as a mean to analyze strategic interactions among decision-makers. Previous studies that apply game theory to study shared stocks have demonstrated that cooperation between nations in managing these stocks will most likely result in the best overall ecological and economic outcome for nations sharing a common resource [@Bailey:2010ga; @Eide:2013dha]. Lack of cooperation in managing shared stocks may result in over-exploitation [@Clark:1980js; @Nguyen:2018dk], reduce the profitability potential of the fishery [@Merino:2007jz], and led to conflict between coastal nations [@Spijkers:2017ij]. Only in some cases, when the target stock is transboundary but sessile (e.g., clams) non-cooperation could provide a better overall solution [@Munro:2002uf].
 
-```{r SharedFigure, eval = T, fig.width = 9, fig.height = 4, echo=FALSE, fig.cap="Schematic representation of the different types of shared stocks as defined by the United Nations’ Food and Agriculture Organization (FAO). Adapted from FAO (http://www.fao.org/figis/servlet/IRS?iid=2665). Fish images from Dr. Seuss. 1960. One fish, two fish, red fish, blue fish. Penguin Random House LLC.", fig.scap = "Schematic representation of the different types of shared stocks as defined by the United Nations’ Food and Agriculture Organization (FAO)",  out.extra=''}
+```{r SharedFigure, eval = T, fig.width = 9, fig.height = 4, echo=FALSE, fig.cap="Schematic representation of the different types of shared stocks as defined by the United Nations’ Food and Agriculture Organization (FAO). Adapted from FAO (http://www.fao.org/figis/servlet/IRS?iid=2665). Fish images from Dr. Seuss. 1960. One fish, two fish, red fish, blue fish. Penguin Random House LLC.", fig.scap = "Schematic representation of the different types of shared stocks as defined by the United Nations’ Food and Agriculture Organization (FAO)", out.extra=''}
 
 # Optional figures http://www.fao.org/3/a0653e/a0653e04.htm 
 # https://www.thedailystar.net/news-detail-219176
@@ -48,14 +48,14 @@ By 2017, greenhouse gas emissions from human activities is estimated to have war
 \begin{wrapfigure}{R}{.5\textwidth}
  \begin{center}
     \includegraphics[width=.5\textwidth]{../Images/Intro_02.png}
-  \caption{Past and future changes in sea surface temperature, surface ocean pH and oxygen content (100-600 m depth). Adapted from IPCC (2019)}
+  \caption[Past and future changes in sea surface temperature, surface ocean pH and oxygen content.]{Past and future changes in sea surface temperature, surface ocean pH and oxygen content (100-600 m depth). Adapted from IPCC (2019)}
   \label{fig:IPCC}
 \end{center}
 \end{wrapfigure}
 
 <!-- # Call chunk for for WOR DOCUMENT-->
 
-```{r IPCC, eval = F, fig.width = 3, fig.height = 2, echo=FALSE, fig.cap="Past and future changes in sea surface temperature, surface ocean pH and oxygen content (100-600 m depth). Adapted from IPCC (2019)"}
+```{r IPCC, eval = F, fig.width = 3, fig.height = 2, echo=FALSE, fig.cap="Past and future changes in sea surface temperature, surface ocean pH and oxygen content (100-600 m depth). Adapted from IPCC (2019)", fig.scap ="Past and future changes in sea surface temperature, surface ocean pH and oxygen content (100-600 m depth)."}
 
 img <- readPNG("../Images/Intro_02.png")
 grid.raster(img)
@@ -86,7 +86,7 @@ Current transboundary fisheries management might not be adapted to cope with shi
 
 Both the magnitude and pattern of range shifts are important to characterize the risk and impacts of shifting shared stocks on transboundary fisheries management [@Pinsky:2012kq; @Link:2010ei]. The distribution of a fish stock can change in multiple ways. For example, the stock range can shift from one EEZ while approximately maintaining their range size. Also, the distribution of the stock can contract from or expand into a neighboring EEZ, resulting in a decrease or increase in range size, respectively (Figure \@ref(fig:ShiftsFigure)). The magnitude and characteristics of range shifts of shared stocks will have different consequences to their management [@Link:2010ei]. Historically, such shifts have caused conflict between neighboring nations and compromised the sustainability of diverse shared stocks. Prominent examples include the 1980’s conflict over Pacific salmon between the United States (US) and Canada [@Miller:2004fpa; @Song:2017va].
 
-```{r ShiftsFigure, eval = T, fig.width = 6, fig.height = 5, echo=FALSE, fig.cap="Schematic representation of different pattern of distribution shifts in shared stocks. Adapted from Link et al. (2010)"}
+```{r ShiftsFigure, eval = T, fig.width = 6, fig.height = 5, echo=FALSE, fig.cap="Schematic representation of different pattern of distribution shifts in shared stocks. Adapted from Link et al. (2010)", fig.scap="Schematic representation of different pattern of distribution shifts in shared stocks.", out.extra=''}
 
 img <- readPNG("../Images/Intro_03.png")
 grid.raster(img)
@@ -108,7 +108,7 @@ The goal of this dissertation is to understand the impacts of climate change on 
 
 The dissertation is divided in three main data chapters and a conclusion chapter (Figure \@ref(fig:DiagramFigure)). In Chapter 2, I present a global estimation of the current transboundary species and their importance to fisheries catches and revenue. Chapter 3 looks at the consequences that climate change will have to the management of shared stocks, more specifically, how the change in species' distributions are going to affect the proportion of shared stocks between neighboring countries. In Chapter 4, I use two case studies of shared management between Canada and the United States to look at the policy implications of such shifts. Finally, in the conclusion chapter (Chapter 5), I provide an overall synthesis of the impacts of climate change to the management of shared stocks, not only highlighting the identified challenges informed by the previous chapters but also suggesting solutions to cope with a changing world. The methods of my dissertation are broadly based on numerical modeling and combination and synthesis of multiple datasets. In terms of modelling the methods relay on coupled species distribution models and Earth system models’ simulations to project future changes in transboundary species distribution in the $21^{st}$ century under two climate change scenarios.
 
-```{r DiagramFigure, eval = T, fig.width = 8, fig.height = 4, echo=FALSE, fig.cap="Schematic diagram illustrating the structure of this dissertation. It starts with a global identification of transboundary species. It then proceeds to assess the climate change impacts on transboundary stocks of the identified transboundary species. Finally, it uses two case studies to explore the management implications of climate change to the joint management of transboundary stocks"}
+```{r DiagramFigure, eval = T, fig.width = 8, fig.height = 4, echo=FALSE, fig.cap="Schematic diagram illustrating the structure of this dissertation. It starts with a global identification of transboundary species. It then proceeds to assess the climate change impacts on transboundary stocks of the identified transboundary species. Finally, it uses two case studies to explore the management implications of climate change to the joint management of transboundary stocks", fig.scap="Schematic diagram illustrating the structure of this dissertation.",out.extra=''}
 
 img <- readPNG("../Images/Intro_04.png")
 grid.raster(img)

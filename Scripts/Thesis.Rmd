@@ -31,23 +31,15 @@ my_lib(
     "grid",
     # glossary
     "tidyverse",
-    # "kableExtra"
     "knitr"
   )
 )
 
-## Trouboeshooting
-
-# Check García molinos reference in introduction
-
-
-
 ```
 
-<!-- Main Thesis format -->
-<!-- \fontfamily{times} -->
+<!-- Title page -->
 
-```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = F}
+```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -56,15 +48,15 @@ my_lib(
 ```
 
 
-```{r comitee_form, child = '../Sections/comitee_form.Rmd', eval = F}
+<!-- Comitee form -->
 
-### Status ###
-# Drafted 19/07
-# Done 20/07
+```{r comitee_form, child = '../Sections/comitee_form.Rmd', eval = T}
 
 ```
 
 \clearpage
+
+<!-- Global page configuration -->
 
 \setlength{\parindent}{4em} 
 \linespread{1}
@@ -77,10 +69,9 @@ my_lib(
 <!-- # Abstract -->
 
 \section*{Abstract}
-\addcontentsline{toc}{section}{Abstract}
+\addcontentsline{toc}{section}{Abstract} 
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = F}
-
+```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
 
 ```
 
@@ -91,9 +82,7 @@ my_lib(
 \section*{Lay Summary}
 \addcontentsline{toc}{section}{Lay Summary}
 
-<!-- Max 150 words -->
-
-```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = F}
+```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = T}
 
 ```
 
@@ -104,7 +93,7 @@ my_lib(
 \section*{Preface}
 \addcontentsline{toc}{section}{Preface}
 
-```{r Preface, child = '../Sections/Preface.Rmd', eval = F}
+```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
 
 ```
 
@@ -126,10 +115,9 @@ my_lib(
 
 <!-- # Glossary -->
 \section*{Glossary}
-
 \addcontentsline{toc}{section}{Glossary}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = F}
+```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
 
 ```
 
@@ -138,10 +126,9 @@ my_lib(
 
 <!-- # Acknowledgements -->
 \section*{Acknowledgements}
-
 \addcontentsline{toc}{section}{Acknowledgements}
 
-```{r Acknowledgements, child = '../Sections/Acknowledgments.Rmd', eval = F}
+```{r Acknowledgements, child = '../Sections/Acknowledgments.Rmd', eval = T}
 
 ### Status ###
 # Pending
@@ -149,18 +136,15 @@ my_lib(
 
 \clearpage
 
+<!-- Remove page number  -->
 \pagenumbering{gobble}
 
-```{r Call_Niema, eval = F, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
+```{r Call_Niema, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
 
 img <- readPNG("../Images/Niema_A.png")
 grid.raster(img)
 
 ```
-
-<!-- ![](../Images/Niema_A.jpeg) -->
-
-<!-- \begin{center} -->
 
 The only problem with dogs is that they do not live long enough
 
@@ -170,6 +154,8 @@ The only problem with dogs is that they do not live long enough
 
 <!-- Set Numbering properly for rest of the document -->
 \pagenumbering{arabic}
+
+<!-- Set Figure and table numberring according to the chapter -->
 \renewcommand{\thefigure}{1.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{1.\arabic{table}}
@@ -189,12 +175,13 @@ The only problem with dogs is that they do not live long enough
 
 # The transboundary nature of the world’s exploited marine species
 
+<!-- Set Figure and table numberring according to the chapter -->
 \renewcommand{\thefigure}{2.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{2.\arabic{table}}
 \setcounter{table}{0}
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -208,6 +195,7 @@ The only problem with dogs is that they do not live long enough
 
 # Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change
 
+<!-- Set Figure, table and equations numberring according to the chapter -->
 \renewcommand{\thefigure}{3.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{3.\arabic{table}}
@@ -215,7 +203,7 @@ The only problem with dogs is that they do not live long enough
 \renewcommand{\theequation}{3.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
 
 ### Status ###
 # Drafted 27/09
@@ -226,6 +214,7 @@ The only problem with dogs is that they do not live long enough
 
 # Challenges to transboundary fisheries management in North America under climate change
 
+<!-- Set Figure, table and equations numberring according to the chapter -->
 \renewcommand{\thefigure}{4.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{4.\arabic{table}}
@@ -233,7 +222,7 @@ The only problem with dogs is that they do not live long enough
 \renewcommand{\theequation}{4.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
 
 ### Status ###
 # Drafted 10/03
@@ -246,12 +235,7 @@ The only problem with dogs is that they do not live long enough
 
 # Synthesis and Conclusion
 
-\renewcommand{\thefigure}{5.\arabic{figure}}
-\setcounter{figure}{0}
-\renewcommand{\thetable}{5.\arabic{table}}
-\setcounter{table}{0}
-
-```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = F}
+```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = T}
 
 ### Status ###
 # Drafted 28/07
@@ -267,14 +251,14 @@ The only problem with dogs is that they do not live long enough
 # References
 <!-- \section*{References} -->
 
+<!-- Reset page config. For proper referencing  -->
 \noindent
-
 \leftskip=2em
 \parindent=-2em
 
 <div id="refs"></div>
 
-
+<!-- Go back to original page config. -->
 \setlength{\parindent}{4em} 
 \linespread{1}
 \doublespacing
@@ -282,8 +266,7 @@ The only problem with dogs is that they do not live long enough
 
 # Appendices
 
-<!-- Reseting figure/table numbering and adding an "A" at the front of each figure/table  -->
-
+<!-- Set Figure, table and equations numberring according to the chapter -->
 \renewcommand{\thefigure}{A2.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{A2.\arabic{table}}
@@ -291,7 +274,7 @@ The only problem with dogs is that they do not live long enough
 
 ## Appendix A - Supplementary information for "The transboundary nature of the world’s exploited marine species"
 
-```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = F}
+```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = T}
 
 ### Status ###
 # Drafted 19/07
@@ -303,13 +286,14 @@ The only problem with dogs is that they do not live long enough
 
 ## Appendix B - Supplementary information for "Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change"
 
+<!-- Set Figure, table and equations numberring according to the chapter -->
 \renewcommand{\thefigure}{A3.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{A3.\arabic{table}}
 \setcounter{table}{0}
 
 
-```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = F}
+```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = T}
 
 ### Status ###
 # Drafted 27/09
@@ -318,13 +302,14 @@ The only problem with dogs is that they do not live long enough
 
 ## Appendix C - Supplementary information for "Challenges to transboundary fisheries management in North America under climate change"
 
+<!-- Set Figure, table and equations numberring according to the chapter -->
 \renewcommand{\thefigure}{A4.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{A4.\arabic{table}}
 \setcounter{table}{0}
 
 
-```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = F}
+```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = T}
 
 ### Status ###
 # Drafted 10/03
