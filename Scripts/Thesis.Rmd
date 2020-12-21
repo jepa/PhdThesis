@@ -47,6 +47,9 @@ my_lib(
 
 ```
 
+<!-- Set numbers in non arabic format. And starts in page t as required by G+PS Remove normal markdown chapters before rendering to PDF  -->
+\pagenumbering{roman}
+\setcounter{page}{2}
 
 <!-- Comitee form -->
 
@@ -61,10 +64,6 @@ my_lib(
 \setlength{\parindent}{4em} 
 \linespread{1}
 \doublespacing
-
-
-<!-- Set numbers in non arabic format. Remove normal markdown chapters before rendering to PDF  -->
-\pagenumbering{roman}
 
 <!-- # Abstract -->
 
@@ -106,9 +105,10 @@ my_lib(
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \setcounter{tocdepth}{3}
 \tableofcontents
-\listoffigures
-\listoftables
 \clearpage
+\listoffigures
+\clearpage
+\listoftables
 
 \end{singlespace}
 
@@ -248,8 +248,9 @@ The only problem with dogs is that they do not live long enough
 
 \clearpage
 
-# References
-<!-- \section*{References} -->
+<!-- # References -->
+\section*{References}
+\addcontentsline{toc}{section}{References} 
 
 <!-- Reset page config. For proper referencing  -->
 \noindent
@@ -264,7 +265,9 @@ The only problem with dogs is that they do not live long enough
 \doublespacing
 
 
-# Appendices
+<!-- # Appendices -->
+\section*{Appendices}
+\addcontentsline{toc}{section}{Appendices} 
 
 <!-- Set Figure, table and equations numberring according to the chapter -->
 \renewcommand{\thefigure}{A2.\arabic{figure}}
