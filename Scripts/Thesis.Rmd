@@ -15,6 +15,7 @@ header-includes:
    - \floatplacement{figure}{H} # Make every figure with caption = h
    - \usepackage{wrapfig} # Wrap text over figure
 bibliography: ../References/Thesis_Ref.bib
+csl: ../References/harvard.csl
 ---
 
 
@@ -187,9 +188,6 @@ The only problem with dogs is that they do not live long enough
 
 ```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
 
-### Status ###
-# Drafted 27/09
-
 ```
 
 \clearpage
@@ -206,11 +204,6 @@ The only problem with dogs is that they do not live long enough
 
 ```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
 
-### Status ###
-# Drafted 10/03
-# Done 20/07
-# Accepted for pub. 25/09
-
 ```
 
 \clearpage
@@ -218,13 +211,6 @@ The only problem with dogs is that they do not live long enough
 # Synthesis and Conclusion
 
 ```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = T}
-
-### Status ###
-# Drafted 28/07
-# Revised W. 09/11
-# Revised W. 11/11
-# Done 12/11
-
 
 ```
 
@@ -261,11 +247,6 @@ The only problem with dogs is that they do not live long enough
 
 ```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = T}
 
-### Status ###
-# Drafted 19/07
-# Done 30/09
-# Accepted for pub. 05/10
-
 
 ```
 
@@ -280,8 +261,6 @@ The only problem with dogs is that they do not live long enough
 
 ```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = T}
 
-### Status ###
-# Drafted 27/09
 
 ```
 
@@ -295,10 +274,4 @@ The only problem with dogs is that they do not live long enough
 
 
 ```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = T}
-
-### Status ###
-# Drafted 10/03
-# Done 20/07
-# Accepted for pub. 25/09
-
 ```
