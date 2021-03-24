@@ -136,7 +136,7 @@ grid.raster(img)
 
 ```
 
-The only problem with dogs is that they do not live long enough
+The only problem with dogs is that they do not live long enough.
 
 \clearpage
 
@@ -237,6 +237,11 @@ The only problem with dogs is that they do not live long enough
 \section*{Appendices}
 \addcontentsline{toc}{section}{Appendices} 
 
+<!-- ## Appendix A -->
+
+\section*{Appendix A - Supplementary information for "The transboundary nature of the world’s exploited marine species"}
+\addcontentsline{toc}{section}{Appendix A}
+
 <!-- Set Figure, table and equations numbering according to the chapter -->
 \renewcommand{\thefigure}{A2.\arabic{figure}}
 \setcounter{figure}{0}
@@ -245,12 +250,15 @@ The only problem with dogs is that they do not live long enough
 \renewcommand{\theequation}{A2.\arabic{equation}}
 \setcounter{equation}{0}
 
-## Appendix A - Supplementary information for "The transboundary nature of the world’s exploited marine species"
 
 ```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = F}
 ```
 
-## Appendix B - Supplementary information for "Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change"
+
+<!-- ## Appendix B  -->
+
+\section*{Appendix B - Supplementary information for "Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change"}
+\addcontentsline{toc}{section}{Appendix B}
 
 <!-- Set Figure, table and equations numbering according to the chapter -->
 \renewcommand{\thefigure}{A3.\arabic{figure}}
@@ -264,7 +272,11 @@ The only problem with dogs is that they do not live long enough
 ```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = F}
 ```
 
-## Appendix C - Supplementary information for "Challenges to transboundary fisheries management in North America under climate change"
+<!-- ## Appendix C -->
+
+\section*{Appendix C - Supplementary information for "Challenges to transboundary fisheries management in North America under climate change"}
+\addcontentsline{toc}{section}{Appendix C}
+
 
 <!-- Set Figure, table and equations numbering according to the chapter -->
 \renewcommand{\thefigure}{A4.\arabic{figure}}
