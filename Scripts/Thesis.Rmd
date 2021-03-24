@@ -41,7 +41,7 @@ my_lib(
 
 <!-- Title page -->
 
-```{r Cover_Page, child = '../Sections/Cover.Rmd', eval = T}
+```{r Cover_Page, child = '../Sections/0_Cover.Rmd', eval = F}
 
 ```
 
@@ -51,13 +51,9 @@ my_lib(
 
 <!-- Comitee form -->
 
-```{r comitee_form, child = '../Sections/comitee_form.Rmd', eval = T}
+```{r comitee_form, child = '../Sections/01_comitee_form.Rmd', eval = T}
 
 ```
-
-\clearpage
-
-\includepdf[pages={-}]{../External_Documents/Palacios_DDA_Form_signed.pdf}
 
 \clearpage
 
@@ -72,7 +68,7 @@ my_lib(
 \section*{Abstract}
 \addcontentsline{toc}{section}{Abstract} 
 
-```{r Abstract, child = '../Sections/Abstract.Rmd', eval = T}
+```{r Abstract, child = '../Sections/02_Abstract.Rmd', eval = F}
 
 ```
 
@@ -83,7 +79,7 @@ my_lib(
 \section*{Lay Summary}
 \addcontentsline{toc}{section}{Lay Summary}
 
-```{r Lay_Abstract, child = '../Sections/Lay_Abstract.Rmd', eval = T}
+```{r Lay_Abstract, child = '../Sections/03_Lay_Abstract.Rmd', eval = F}
 
 ```
 
@@ -94,7 +90,7 @@ my_lib(
 \section*{Preface}
 \addcontentsline{toc}{section}{Preface}
 
-```{r Preface, child = '../Sections/Preface.Rmd', eval = T}
+```{r Preface, child = '../Sections/04_Preface.Rmd', eval = F}
 
 ```
 
@@ -119,7 +115,7 @@ my_lib(
 \section*{Glossary}
 \addcontentsline{toc}{section}{Glossary}
 
-```{r Acronyms, child = '../Sections/Acronyms.Rmd', eval = T}
+```{r Acronyms, child = '../Sections/05_Acronyms.Rmd', eval = F}
 
 ```
 
@@ -130,7 +126,7 @@ my_lib(
 \section*{Acknowledgements}
 \addcontentsline{toc}{section}{Acknowledgements}
 
-```{r Acknowledgements, child = '../Sections/Acknowledgments.Rmd', eval = T}
+```{r Acknowledgements, child = '../Sections/06_Acknowledgments.Rmd', eval = F}
 
 ```
 
@@ -139,7 +135,7 @@ my_lib(
 <!-- Remove page number  -->
 \pagenumbering{gobble}
 
-```{r Call_Niema, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
+```{r Call_Niema, eval = F, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
 
 img <- readPNG("../Images/Niema_A.png")
 grid.raster(img)
@@ -161,7 +157,7 @@ The only problem with dogs is that they do not live long enough
 \renewcommand{\thetable}{1.\arabic{table}}
 \setcounter{table}{0}
 
-```{r Intro, child = '../Sections/Introduction.Rmd', eval = T}
+```{r Intro, child = '../Sections/07_Introduction.Rmd', eval = F}
 
 ```
 
@@ -175,7 +171,7 @@ The only problem with dogs is that they do not live long enough
 \renewcommand{\thetable}{2.\arabic{table}}
 \setcounter{table}{0}
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
 
 ```
 
@@ -191,7 +187,7 @@ The only problem with dogs is that they do not live long enough
 \renewcommand{\theequation}{3.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
 
 ```
 
@@ -207,7 +203,7 @@ The only problem with dogs is that they do not live long enough
 \renewcommand{\theequation}{4.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
 
 ```
 
@@ -215,7 +211,7 @@ The only problem with dogs is that they do not live long enough
 
 # Synthesis and Conclusion
 
-```{r Conclusion, child = '../Sections/Conclusion.Rmd', eval = T}
+```{r Conclusion, child = '../Sections/08_Conclusion.Rmd', eval = F}
 
 ```
 
@@ -242,7 +238,7 @@ The only problem with dogs is that they do not live long enough
 \section*{Appendices}
 \addcontentsline{toc}{section}{Appendices} 
 
-<!-- Set Figure, table and equations numberring according to the chapter -->
+<!-- Set Figure, table and equations numbering according to the chapter -->
 \renewcommand{\thefigure}{A2.\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{A2.\arabic{table}}
@@ -250,7 +246,7 @@ The only problem with dogs is that they do not live long enough
 
 ## Appendix A - Supplementary information for "The transboundary nature of the world’s exploited marine species"
 
-```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = T}
+```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = F}
 
 
 ```
@@ -264,7 +260,7 @@ The only problem with dogs is that they do not live long enough
 \setcounter{table}{0}
 
 
-```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = T}
+```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = F}
 
 
 ```
@@ -278,5 +274,5 @@ The only problem with dogs is that they do not live long enough
 \setcounter{table}{0}
 
 
-```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = T}
+```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = F}
 ```
