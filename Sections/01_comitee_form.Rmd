@@ -27,21 +27,18 @@ in \noindent\underline{\makebox[5.8in][l]{Zoology}}
 **Examining Committee:**
 
 \noindent\underline{\makebox[6in][l]{William W.L. Cheung, Zoology, UBC}}  
-Supervisor
+Research Supervisor
 
-\noindent\underline{\makebox[6in][l]{Villy Christensen, Zoology, UBC}}  
+\noindent\underline{\makebox[6in][l]{U. Rashid Sumaila, Institute for Resources, Environment and Sustainability, UBC}}  
 Supervisory Committee Member 
 
-\noindent\underline{\makebox[6in][l]{Daniel Pauly, Zoology, UBC}}  
-Supervisory Committee Member 
-
-\noindent\underline{\makebox[6in][l]{U. Rashid Sumaila, IRES, UBC}}  
-Supervisory Committee Member 
-
-\noindent\underline{\makebox[6in][l]{}}  
+\noindent\underline{\makebox[6in][l]{Les Lavkulich, Land and Food Systems, UBC}}  
 University Examiner
 
-\noindent\underline{\makebox[6in][l]{}}  
+\noindent\underline{\makebox[6in][l]{Scott Hinch, Forestry, UBC}}  
+University Examiner
+
+\noindent\underline{\makebox[6in][l]{Ellen K. Piktch, School of Marine and Atmospheric Sciences, Stony Brook University}}  
 External Examiner
 
 
