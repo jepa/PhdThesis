@@ -148,7 +148,7 @@ The only problem with dogs is that they do not live long enough.
 
 \clearpage
 
-# CHapter One: Introduction
+# Chapter One: Introduction
 
 <!-- Set Numbering properly for rest of the document -->
 \pagenumbering{arabic}
