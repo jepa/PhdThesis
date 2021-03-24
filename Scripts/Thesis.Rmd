@@ -41,7 +41,7 @@ my_lib(
 
 <!-- Title page -->
 
-```{r Cover, child = '../Sections/00_Cover.Rmd', eval = F}
+```{r Cover, child = '../Sections/00_Cover.Rmd', eval = T}
 ```
 
 <!-- Set numbers in non Arabic format. And starts in page II as required by G+PS.
@@ -67,7 +67,7 @@ NOTE: Remove normal markdown chapters before rendering to PDF  -->
 \section*{Abstract}
 \addcontentsline{toc}{section}{Abstract} 
 
-```{r Abstract, child = '../Sections/02_Abstract.Rmd', eval = F}
+```{r Abstract, child = '../Sections/02_Abstract.Rmd', eval = T}
 ```
 
 \clearpage
@@ -77,7 +77,7 @@ NOTE: Remove normal markdown chapters before rendering to PDF  -->
 \section*{Lay Summary}
 \addcontentsline{toc}{section}{Lay Summary}
 
-```{r Lay_abstract, child = '../Sections/03_Lay_abstract.Rmd', eval = F}
+```{r Lay_abstract, child = '../Sections/03_Lay_abstract.Rmd', eval = T}
 ```
 
 \clearpage
@@ -87,23 +87,29 @@ NOTE: Remove normal markdown chapters before rendering to PDF  -->
 \section*{Preface}
 \addcontentsline{toc}{section}{Preface}
 
-```{r Preface, child = '../Sections/04_Preface.Rmd', eval = F}
+```{r Preface, child = '../Sections/04_Preface.Rmd', eval = T}
 ```
 
 \clearpage
 
 
 <!-- Include a table of contents (including list of figures and tables) without numbering and with dots -->
+
+
+\addcontentsline{toc}{section}{Table of Contents}
+
 \thispagestyle{empty}
 \begin{singlespace}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \setcounter{tocdepth}{3}
 \tableofcontents
 \clearpage
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+\clearpage
+\addcontentsline{toc}{section}{List of Figures}
 \listoffigures
 \clearpage
-\listoftables
-
 \end{singlespace}
 
 
@@ -111,7 +117,7 @@ NOTE: Remove normal markdown chapters before rendering to PDF  -->
 \section*{Glossary}
 \addcontentsline{toc}{section}{Glossary}
 
-```{r Glossary, child = '../Sections/05_Glossary.Rmd', eval = F}
+```{r Glossary, child = '../Sections/05_Glossary.Rmd', eval = T}
 ```
 
 \clearpage
@@ -121,15 +127,17 @@ NOTE: Remove normal markdown chapters before rendering to PDF  -->
 \section*{Acknowledgements}
 \addcontentsline{toc}{section}{Acknowledgements}
 
-```{r Acknowledgements, child = '../Sections/06_Acknowledgments.Rmd', eval = F}
+```{r Acknowledgements, child = '../Sections/06_Acknowledgments.Rmd', eval = T}
 ```
 
 \clearpage
 
 <!-- Remove page number  -->
-\pagenumbering{gobble}
 
-```{r Call_Niema, eval = F, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
+\section*{Dedication}
+\addcontentsline{toc}{section}{Dedication}
+
+```{r Call_Niema, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
 
 img <- readPNG("../Images/Niema_A.png")
 grid.raster(img)
@@ -140,7 +148,7 @@ The only problem with dogs is that they do not live long enough.
 
 \clearpage
 
-# Introduction
+# CHapter One: Introduction
 
 <!-- Set Numbering properly for rest of the document -->
 \pagenumbering{arabic}
@@ -155,14 +163,14 @@ The only problem with dogs is that they do not live long enough.
 \renewcommand{\theequation}{1.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r Intro, child = '../Sections/07_Introduction.Rmd', eval = F}
+```{r Intro, child = '../Sections/07_Introduction.Rmd', eval = T}
 ```
 
 \clearpage
 
 <!-- From here on, include your different data chapters using normal Rmarkdown titles -->
 
-# The transboundary nature of the world’s exploited marine species
+# Chapter Two: The transboundary nature of the world’s exploited marine species
 
 <!-- Set figure and table numbering according to the chapter -->
 \renewcommand{\thefigure}{2.\arabic{figure}}
@@ -172,12 +180,12 @@ The only problem with dogs is that they do not live long enough.
 \renewcommand{\theequation}{2.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = F}
+```{r FishForVisa, child = '~/GitHub/FishForVisa/Scripts/Manuscript_Draft.Rmd', eval = T}
 ```
 
 \clearpage
 
-# Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change
+# Chapter Three: Early emergence of range shift-induced challenges in managing transboundary fish stocks under climate change
 
 <!-- Set figure and table numbering according to the chapter -->
 \renewcommand{\thefigure}{3.\arabic{figure}}
@@ -187,12 +195,12 @@ The only problem with dogs is that they do not live long enough.
 \renewcommand{\theequation}{3.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = F}
+```{r TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Manuscript.Rmd', eval = T}
 ```
 
 \clearpage
 
-# Challenges to transboundary fisheries management in North America under climate change
+# Chapter Four: Challenges to transboundary fisheries management in North America under climate change
 
 <!-- Set figure and table numbering according to the chapter -->
 \renewcommand{\thefigure}{4.\arabic{figure}}
@@ -202,23 +210,23 @@ The only problem with dogs is that they do not live long enough.
 \renewcommand{\theequation}{4.\arabic{equation}}
 \setcounter{equation}{0}
 
-```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = F}
+```{r OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Manuscript_Draft.Rmd', eval = T}
 ```
 
 \clearpage
 
-<!-- Done with data chapters, last secctions -->
+<!-- Done with data chapters, last sections -->
 
 # Synthesis and Conclusion
 
-```{r Conclusion, child = '../Sections/08_Conclusion.Rmd', eval = F}
+```{r Conclusion, child = '../Sections/08_Conclusion.Rmd', eval = T}
 ```
 
 \clearpage
 
 <!-- # References -->
-\section*{References}
-\addcontentsline{toc}{section}{References} 
+\section*{Bibliography}
+\addcontentsline{toc}{section}{Bibliography} 
 
 <!-- Reset page config. For proper referencing  -->
 \noindent
@@ -251,7 +259,7 @@ The only problem with dogs is that they do not live long enough.
 \setcounter{equation}{0}
 
 
-```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = F}
+```{r App_FishForVisa, child = '~/GitHub/FishForVisa/Scripts/supplements.Rmd', eval = T}
 ```
 
 
@@ -269,7 +277,7 @@ The only problem with dogs is that they do not live long enough.
 \setcounter{equation}{0}
 
 
-```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = F}
+```{r App_TransEmergence, child = '~/GitHub/TransEmergence/Scripts/Supplements.Rmd', eval = T}
 ```
 
 <!-- ## Appendix C -->
@@ -287,7 +295,7 @@ The only problem with dogs is that they do not live long enough.
 \setcounter{equation}{0}
 
 
-```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = F}
+```{r App_OC_Transboundary, child = '~/GitHub/OC_Transboundary/Ecol/Supplements.Rmd', eval = T}
 ```
 
 
