@@ -134,7 +134,8 @@ NOTE: Remove normal markdown chapters before rendering to PDF  -->
 
 <!-- Remove page number  -->
 
-\section*{Dedication}
+<!-- \section*{Dedication} -->
+
 \addcontentsline{toc}{section}{Dedication}
 
 ```{r Call_Niema, eval = T, fig.width = 7, fig.height = 8, echo=FALSE, fig.pos= "H"}
